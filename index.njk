@@ -5,26 +5,23 @@ layout: base.njk
 <header id="header">
     <div class="grid">
         <div class="column c-start-2 c-end-8">
-            <h2>Maak kennis met</h2>
-            <h1>Bookbite</h1>
-            <p>Een <a href="">Minor IUXD</a> team</p>
-            <div class="buttons">
-                <a class="button primary" href="">Ontdek het prototype</a>
-                <a class="button secondary" href="">Lees casestudy</a>
-            </div>
+            <h1 class="light">Silverpoint</h1>
+            <div class="spacer-32"></div>
+            <p class="big light">Een <a class="big light" href="">Minor IUXD</a> team</p>
+            {# <div class="buttons">
+                <a class="button primary light" href="">Ontdek het prototype</a>
+                <a class="button secondary light" href="">Lees casestudy</a>
+            </div> #}
         </div>
 
+        <div class="column c-start-8 c-end-12 r-start-1 r-end-3"><p>werkt dit goed?</p></div>
+
         {# Project details #}
-        <div class="project-details c-start-8 c-end-12">
+        <div class="project-details c-start-2 c-end-8">
             <div class="property"><p>Periode</p></div><div class="value"><p>September 2020 t/m January 2021</p></div>
             <div class="property"><p>School</p></div><div class="value"><a href="https://www.hogeschoolrotterdam.nl/">Hogeschool Rotterdam</a></div>
             <div class="property"><p>Vak</p></div><div class="value"><a href="https://expo.iuxd.nl/">Minor IUXD</a></div>
             <div class="property"><p>Opdrachtgever</p></div><div class="value"><a href="https://www.kb.nl/">Koninklijke Bibliotheek</a></div>
-        </div>
-
-        {# Case video #}
-        <div class="video-container c-start-2 c-end-12">
-            <iframe src="https://www.youtube.com/embed/7xFH1fUhhLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </header>
@@ -32,12 +29,81 @@ layout: base.njk
 {# SECTION: #}
 <section id="">
     <div class="grid">
-        <div class="column c-start-1 c-end-5">
-            <h1>Hallo daar!</h1>
+        {# Section details #}
+        <div class="column c-start-2 c-end-6">
+            <img src="{{ '/' | url }}assets/icons/dd-first.svg">
+            <h1 class="dark-purple">Onderzoek</h1>
+            <div class="spacer-32"></div>
+            <p class="big grey">Wij hebben onderzoek gedaan door middel van deskresearch, interviews, enquêtes, onderzoek naar technische mogelijkheden, brand-research en onderzoek naar verschillende doelgroepen. Uit het onderzoek hebben we de belangrijkste inzichten gehaald, die hieronder beschreven staan.</p>
+        </div>
+
+        {# Section content #}
+        <div class="card-grid c-start-6 c-end-11">
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="" class="white">
+    <div class="grid">
+        {# Section details #}
+        <div class="column c-start-2 c-end-6">
+            <img src="{{ '/' | url }}assets/icons/dd-first.svg">
+            <h1 class="dark-purple">Ontwerpcriteria</h1>
+            <div class="spacer-32"></div>
+            <p class="big grey">Voor ons ontwerp hebben we uiteraard een aantal ontwerp criteria om te voldoen aan de behoeftes van de stakeholders.</p>
+        </div>
+
+        {# Section content #}
+        <div class="card-grid c-start-6 c-end-11">
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+        </div>
+    </div>
+</section>
+
+{# SECTION: #}
+<section id="">
+    <div class="grid">
+        {# Section details #}
+        <div class="column align-center c-start-4 c-end-10">
+            <h3 class="light-purple">Maak kennis met...</h3>
+            <div class="spacer-16"></div>
+            <h1 class="dark-purple">Bookbite</h1>
+            <div class="spacer-32"></div>
+            <p class="big grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu consequat sapien. Cras pretium convallis convallis. Aliquam feugiat velit sit amet mi tristique condimentum. Curabitur mollis finibus nibh vitae venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dignissim id purus eu volutpat.</p>
+        </div>
+
+        {# Section content #}
+        <div class="video-container c-start-3 c-end-11">
+            <iframe src="https://www.youtube.com/embed/7xFH1fUhhLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </section>
 
 {# FOOTER #}
 <footer id="footer">
+    <div class="grid">
+        <div class="column c-start-2 c-end-6">
+            <h1 class="light">Groetjes!</h1>
+            <div class="spacer-16"></div>
+            <p class="light">— Team Silverpoint</p>
+        </div>
+        <div class="column c-start-6 c-end-12"></div>
+    </div>
 </footer>
