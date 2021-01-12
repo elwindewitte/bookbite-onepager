@@ -1,0 +1,8 @@
+@media only screen and (max-width: 700px) {
+   .chapter .header .icon-48 {
+       display: none;
+   } 
+   .chapter .header .icon-32 {
+       display: inline;
+   }
+}

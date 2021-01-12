@@ -1,0 +1,65 @@
+<div class="header">
+    <div class="grid">
+        <div class="column align-center c-start-4 c-span-6">
+            {# ICON #}
+            <div class="marker">
+                {% if chapter == "Discovery" %}
+                    <img class="icon-48" src="{{ '/' | url }}assets/icons/double-diamond-2-48.svg">
+                    <img class="icon-32" src="{{ '/' | url }}assets/icons/double-diamond-2-32.svg">
+                {% elif chapter == "Ideation" %}
+                    <img class="icon-48" src="{{ '/' | url }}assets/icons/double-diamond-3-48.svg">
+                    <img class="icon-32" src="{{ '/' | url }}assets/icons/double-diamond-3-32.svg">
+                {% elif chapter == "Create" %}
+                    <img class="icon-48" src="{{ '/' | url }}assets/icons/double-diamond-4-48.svg">
+                    <img class="icon-32" src="{{ '/' | url }}assets/icons/double-diamond-4-32.svg">
+                {% elif chapter == "Closing" %}
+                    Icoontje aub!
+                {% endif %}
+            </div>
+            <div class="spacer-32"></div>
+            {# TITLE #}
+            <h1>
+                {% if chapter == "Discovery" %}
+                    Discovery fase
+                {% elif chapter == "Ideation" %}
+                    Ideation fase
+                {% elif chapter == "Create" %}
+                    Creation fase
+                {% elif chapter == "Closing" %}
+                    Closing
+                {% endif %}
+            </h1>
+            <div class="spacer-16"></div>
+            {# COUNTER #}
+            <h4>Hoofdstuk 
+                {% if chapter == "Discovery" %}
+                    1
+                {% elif chapter == "Ideation" %}
+                    2
+                {% elif chapter == "Create" %}
+                    3
+                {% elif chapter == "Closing" %}
+                    4
+                {% endif %}
+            </h4>
+            <div class="spacer-48"></div>
+            {# DESCRIPTION #}
+            <p class="big">
+                {% if chapter == "Discovery" %}
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus quam tincidunt mattis metus tempus morbi mauris lectus ipsum. Id ut orci, integer sodales. Lectus semper duis orci tincidunt amet, eget dui. Est eget phasellus quis leo lacus, in phasellus consectetur elit.
+                {% elif chapter == "Ideation" %}
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus quam tincidunt mattis metus tempus morbi mauris lectus ipsum. Id ut orci, integer sodales. Lectus semper duis orci tincidunt amet, eget dui. Est eget phasellus quis leo lacus, in phasellus consectetur elit.
+                {% elif chapter == "Create" %}
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus quam tincidunt mattis metus tempus morbi mauris lectus ipsum. Id ut orci, integer sodales. Lectus semper duis orci tincidunt amet, eget dui. Est eget phasellus quis leo lacus, in phasellus consectetur elit.
+                {% elif chapter == "Closing" %}
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus quam tincidunt mattis metus tempus morbi mauris lectus ipsum. Id ut orci, integer sodales.Lectus semper duis orci tincidunt amet, eget dui. Est eget phasellus quis leo lacus, in phasellus consectetur elit.
+                {% endif %}
+            </p>
+            <div class="spacer-48"></div>
+            <div class="button-up">
+                <a class="button primary" href="">Ontdek hoofdstuk</a>
+                <a class="button secondary" href="">Skip naar volgende</a>
+            </div>
+        </div>
+    </div>
+</div>
