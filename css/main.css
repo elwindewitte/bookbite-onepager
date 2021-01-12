@@ -1,0 +1,480 @@
+/* BODY CUSTOM RESET ======================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: none;
+    text-decoration: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    line-height: 1.2;
+    kerning: none !important;
+    z-index: 1;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+}
+
+
+
+
+
+
+
+
+/* IMPORTS ======================================== */
+
+/* INTER and PERMANENT MARKER */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Permanent+Marker&display=swap');
+
+/* SMOOTH FANTASY */
+@font-face {
+    font-family: 'Smooth Fantasy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Smooth Fantasy Personal Use Regular'), url('../assets/fonts/SmoothFantasyPersonalUse-p7RD1.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+/* VARIABLES ======================================== */
+
+:root {
+    --error-green: #27AE60;
+    --error-yellow: #f39c12;
+    --error-red: #c0392b;
+    --color-dark-purple: #453073;
+    --color-light-purple: #896FC2;
+    --color-grey: #8090A6;
+    --color-light: #F0F0F2;
+    --color-black: black;
+    --color-white: white;
+    --font-title: 'Smooth Fantasy', 'Inter', sans-serif;
+    --font-comment: 'Permanent Marker', 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --canvas-width: calc(100vw - (100vw - 100%)); /* Removing the scrollbars from the width */
+    --canvas-height: calc(100vh - (100vh - 100%));
+    --easing: cubic-bezier(0.4, 0, 0.4, 1);
+    --shadow-static-large: 2px 4px 16px rgba(0, 0, 0, 0.16);
+    --shadow-static-small: 1px 2px 8px rgba(0, 0, 0, 0.24);
+    --shadow-hover: 2px 4px 16px rgba(0, 0, 0, 0.16);
+    --shadow-focus: 1px 2px 8px rgba(0, 0, 0, 0, 0.24)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: rgba(69, 48, 115, 0.04); */
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+::selection {
+    background: var(--color-dark-purple);
+    color: var(--color-white);
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* TEXT ======================================== */
+
+h1, h2, h3, h4, h5, p, a {
+    color: var(--color-black);
+}
+
+h1.dark-purple, h2.dark-purple, h3.dark-purple, h4.dark-purple, h5.dark-purple, p.dark-purple, a.dark-purple {
+    color: var(--color-dark-purple);
+}
+
+h1.light-purple, h2.light-purple, h3.light-purple, h4.light-purple, h5.light-purple, p.light-purple, a.light-purple {
+    color: var(--color-light-purple);
+}
+
+h1.light, h2.light, h3.light, h4.light, h5.light, p.light, a.light {
+    color: var(--color-light);
+}
+
+h1.grey, h2.grey, h3.grey, h4.grey, h5.grey, p.grey, a.grey {
+    color: var(--color-grey);
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 72px;
+    line-height: 128px;
+    color: var(--color-dark-purple);
+}
+
+h2 {
+    font-family: var(--font-title);
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--color-dark-purple)
+}
+
+h3 {
+    font-family: var(--font-comment);
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-light-purple);
+}
+
+h4 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--color-grey);
+}
+
+p, a {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.4);
+    text-underline-offset: 4px;
+    transition: all var(--easing) 0.16s;
+}
+
+p.big, a.big {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+a.big {
+    text-underline-offset: 8px;
+}
+
+p.small, a.small {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+a.small {
+    text-underline-offset: 2px;
+}
+
+
+
+
+/* BUTTONS ======== */
+
+a.button {
+    transition: all var(--easing) 0.16s;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transform: translate(0, 0);
+    box-shadow: none;
+}
+
+a.button:hover {
+    transform: translate(0, -4px);
+    box-shadow: var(--shadow-hover);
+}
+
+a.button:active {
+    box-shadow: var(--shadow-focus);
+}
+
+a.button.primary {
+    background: var(--color-light-purple);
+    border: 1px solid rgba(69, 48, 115, 0.16);
+    color: var(--color-light);
+}
+
+a.button.secondary {
+    background: transparent;
+    border: 1px solid var(--color-light-purple);
+    color: var(--color-light-purple);
+}
+
+
+
+
+
+
+
+
+/* GIRD ======================================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 64px;
+    row-gap: 64px;
+    padding: 0;
+    margin: 0;
+}
+
+.column {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.column.align-center {
+    text-align: center !important;
+    align-items: center;
+}
+
+.column p {
+    margin-bottom: 16px;
+}
+
+
+
+
+/* SIZING OF THE COLUMNS ======== */
+
+/* COLUMN START */
+.c-start-1   {grid-column-start: 1}
+.c-start-2   {grid-column-start: 2}
+.c-start-3   {grid-column-start: 3}
+.c-start-4   {grid-column-start: 4}
+.c-start-5   {grid-column-start: 5}
+.c-start-6   {grid-column-start: 6}
+.c-start-7   {grid-column-start: 7}
+.c-start-8   {grid-column-start: 8}
+.c-start-9   {grid-column-start: 9}
+.c-start-10  {grid-column-start: 10}
+.c-start-11  {grid-column-start: 11}
+.c-start-12  {grid-column-start: 12}
+
+/* COLUMN SPAN */
+.c-start-1.c-span-12    {grid-column-end: 13}
+.c-start-2.c-span-10    {grid-column-end: 12}
+.c-start-2.c-span-4     {grid-column-end: 6}
+.c-start-6.c-span-6     {grid-column-end: 12}
+.c-start-4.c-span-6     {grid-column-end: 9}
+.c-start-2.c-span-5     {grid-column-end: 7}
+.c-start-7.c-span-5     {grid-column-end: 12}
+
+/* SPACERS */
+.spacer-8   {width: 8px; height: 8px}
+.spacer-16  {width: 16px; height: 16px}
+.spacer-32  {width: 32px; height: 32px}
+.spacer-48  {width: 48px; height: 48px}
+.spacer-64  {width: 64px; height: 64px}
+
+
+
+
+
+
+
+
+/* HEADER ======================================== */
+
+
+/* CHAPTERS ======================================== */
+
+.chapter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 256px;
+    padding: 128px 64px;
+    margin: 0;
+    border-bottom: 1px solid #f0f; /* Dev purposes */
+}
+
+
+
+
+/* HEADER ======== */
+
+.chapter .header .marker {
+    border: 1px solid rgba(69, 48, 115, 0.16);
+    padding: 16px;
+    border-radius: 40px;
+}
+
+.chapter .header .icon-32 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* SECTIONS ======================================== */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+
+/* RESEARCH ======== */
+
+.section .research-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 32px;
+    row-gap: 32px;
+}
+
+.section .research-cards .card {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 8px;
+    border: 1px solid rgba(69, 48, 115, 0.16);
+    border-radius: 8px;
+}
+
+
+
+
+/* CRITERIA ======== */
+
+.section .criteria-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 32px;
+    row-gap: 32px;
+}
+
+.section .criteria-cards .card {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    column-gap: 24px;
+    border: 1px solid rgba(69, 48, 115, 0.16);
+    border-radius: 8px;
+}
+
+.section .criteria-cards .card .marker {
+    align-self: start;
+    padding: 16px;
+    background: rgba(69, 48, 115, 0.08);
+    border-radius: 32px;
+}
+
+.section .criteria-cards .card .marker p {
+    width: 32px;
+    font-weight: 600;
+    color: rgba(69, 48, 115, 0.40);
+    text-align: center;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+.section .criteria-cards .card .text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 8px;
+    margin-bottom: 8px;
+    align-self: start;
+}
+
+
+
+
+/* CONCEPTS ======== */
+
+.section .concept-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 32px;
+}
+
+.section .concept-cards .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 1px solid rgba(69, 48, 115, 0.16);
+    border-radius: 8px;
+}
+
+.section .concept-cards .card .cover {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background: rgba(69, 48, 115, 0.08);
+    border-radius: 8px 8px 0 0;
+}
+
+.section .concept-cards .card .cover img {
+    max-height: 128px;
+    width: auto;
+}
+
+.section .concept-cards .card .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 24px;
+    padding: 24px;
+    margin-bottom: 8px;
+}
+
+.section .concept-cards .card .title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    column-gap: 24px;
+    align-items: center;
+}
+
+.section .concept-cards .card .marker {
+    align-self: start;
+    padding: 16px;
+    background: rgba(69, 48, 115, 0.08);
+    border-radius: 32px;
+}
+
+.section .concept-cards .card .marker p {
+    width: 32px;
+    font-weight: 600;
+    color: rgba(69, 48, 115, 0.40);
+    text-align: center;
+    line-height: 32px;
+    font-size: 24px;
+}

@@ -1,0 +1,18 @@
+<div class="section">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Onderzoek</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey big">Wij hebben onderzoek gedaan door middel van deskresearch, interviews, enquêtes, onderzoek naar technische mogelijkheden, brand-research en onderzoek naar verschillende doelgroepen. Uit het onderzoek hebben we de belangrijkste inzichten gehaald, die hieronder beschreven staan.</p>
+        </div>
+        <div class="research-cards c-start-2 c-span-10">
+            {% for research in collections.research %}
+            <div class="card">
+                <p class="big">{% if research.data.researchMethod == "Interview" %}"{{ research.data.researchInsight }}"{% else %}{{ research.data.researchInsight }}{% endif %}</p>
+                <p class="grey">{{ research.data.researchMethod }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
