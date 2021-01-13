@@ -440,6 +440,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     margin: 0 24px;
     border-radius: 16px;
     box-shadow: var(--shadow-static-large);
+    display: none; /* Finding the bug */
 }
 
 .chapter#chapter-bookbite h1, .chapter#chapter-bookbite h2, .chapter#chapter-bookbite h3, .chapter#chapter-bookbite h4, .chapter#chapter-bookbite h5, .chapter#chapter-bookbite p, .chapter#chapter-bookbite a {
