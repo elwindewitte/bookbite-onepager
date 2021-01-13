@@ -36,8 +36,9 @@
     .research-cards {grid-template-columns: 1fr 1fr !important; column-gap: 24px !important; row-gap: 24px !important;}
     .criteria-cards {column-gap: 24px !important; row-gap: 24px !important;;}
     .concept-cards {grid-template-columns: 1fr 1fr !important;}
-    .review-cards {grid-template-columns: 1fr 1fr !important;}
-    .job-story-cards .card {grid-template-columns: 1fr 2fr 1fr !important;} 
+    .review-cards {grid-template-columns: 1fr 1fr !important; column-gap: 24px !important; row-gap: 24px !important;}
+    .job-story-cards .card {grid-template-columns: 1fr 2fr 1fr !important;}
+    .wireframe-gallery {column-gap: 32px !important; row-gap: 32px !important;}
 
 
 
@@ -73,6 +74,11 @@
     }
 
 
+    .showcase-gallery img {
+        transform: translate(0, 0) !important;
+    }
+
+
 
 
 
@@ -84,8 +90,10 @@
 
 
     /* COLUMNS ======== */
-    .chapter {padding: 192px 48px;}
+    .chapter {padding: 192px 48px; row-gap: 192px;}
     .chapter#chapter-bookbite {margin: 0; border-radius: 0;}
+    .chapter#chapter-bookbite .logo {height: 48px}
+    .chapter#chapter-bookbite h3 {font-size: 16px; line-height: 24px;}
     .grid {column-gap: 32px; row-gap: 48px;}
     .c-start-4 {grid-column-start: 2}
     .c-start-4.c-span-6 {grid-column-end: 12}
@@ -94,6 +102,8 @@
     .c-start-7 {grid-column-start: 1;}
     .c-start-7.c-span-5 {grid-column-end: 13;}
     .c-start-2.c-span-5 {grid-column-end: 13;}
+    .c-start-3 {grid-column-start: 1;}
+    .c-start-3.c-span-8 {grid-column-end: 13;}
 
 
 
@@ -101,9 +111,9 @@
     /* CUSTOM GRIDS ======== */
     .research-cards {grid-template-columns: 1fr !important; column-gap: 16px !important; row-gap: 16px !important;}
     .criteria-cards {grid-template-columns: 1fr !important; column-gap: 16px !important; row-gap: 16px !important;}
-    .concept-cards {grid-template-columns: 1fr !important;}  
-    .wireframe-gallery {grid-template-columns: 1fr 1fr !important;}
-    .review-cards {grid-template-columns: 1fr !important;}
+    .concept-cards {grid-template-columns: 1fr !important; column-gap: 24px !important; row-gap: 24px !important;}  
+    .wireframe-gallery {grid-template-columns: 1fr 1fr !important; column-gap: 24px !important; row-gap: 24px !important;}
+    .review-cards {grid-template-columns: 1fr !important; column-gap: 16px !important; row-gap: 16px !important;}
     /* JOB STORIES */
     .job-story-cards .card {grid-template-columns: 1fr !important;}
     .job-story-cards .job-story {padding:0 16px 8px 16px !important;}
@@ -151,12 +161,20 @@
     .chapter .header .icon-32 {
         display: inline;
     }
-    .chapter {padding: 128px 16px;}
+    .chapter {padding: 128px 16px; row-gap: 128px;}
     .grid {column-gap: 16px; row-gap: 32px;}
+    .column.align-center {
+        text-align: left !important;
+        align-items: start;
+    }
     .c-start-4 {grid-column-start: 1}
     .c-start-4.c-span-6 {grid-column-end: 13}
     .criteria-cards .card {grid-template-columns: 1fr !important;}
     .criteria-cards .marker {display: none !important;}
+    .wireframe-gallery {column-gap: 16px !important; row-gap: 16px !important;}
+    .concept-cards {column-gap: 16px !important; row-gap: 16px !important;}
+    .concept-cards .marker {display: none !important;}
+    .concept-cards .content {row-gap: 8px !important;}
 }
 
 
