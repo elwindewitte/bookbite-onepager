@@ -30,7 +30,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* IMPORTS ======================================== */
 
 /* INTER and PERMANENT MARKER */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Permanent+Marker&family=Epilogue:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Permanent+Marker&display=swap');
 
 /* SMOOTH FANTASY */
 @font-face {
@@ -64,14 +64,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     --font-title: 'Smooth Fantasy', 'Inter', sans-serif;
     --font-comment: 'Permanent Marker', 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
-    --font-bookbite: 'Epilgue', sans-serif;
+    --font-bookbite: 'Epilogue', sans-serif;
     --canvas-width: calc(100vw - (100vw - 100%)); /* Removing the scrollbars from the width */
     --canvas-height: calc(100vh - (100vh - 100%));
     --easing: cubic-bezier(0.4, 0, 0.4, 1);
     --shadow-static-large: 2px 4px 16px rgba(0, 0, 0, 0.16);
     --shadow-static-small: 1px 2px 8px rgba(0, 0, 0, 0.24);
     --shadow-hover: 2px 4px 16px rgba(0, 0, 0, 0.16);
-    --shadow-focus: 1px 2px 8px rgba(0, 0, 0, 0, 0.24)
+    --shadow-focus: 1px 2px 8px rgba(0, 0, 0, 0.24);
 }
 
 html {
@@ -164,8 +164,15 @@ a {
     text-decoration: underline;
     text-decoration-color: rgba(0, 0, 0, 0.4);
     text-underline-offset: 4px;
-    transition: all var(--easing) 0.16s;
+    transition: text-decoration-color var(--easing) 0.16s;
 }
+
+a:hover {
+    text-decoration-color: rgba(0, 0, 0, 1);
+}
+
+a.grey {text-decoration-color: rgba(128, 144, 166, 0.4)}
+a.grey:hover {text-decoration-color: rgba(128, 144, 166, 1)}
 
 p.big, a.big {
     font-size: 24px;
@@ -199,6 +206,7 @@ a.button {
     border-radius: 4px;
     transform: translate(0, 0);
     box-shadow: none;
+    cursor: pointer;
 }
 
 a.button:hover {
@@ -206,21 +214,26 @@ a.button:hover {
     box-shadow: var(--shadow-hover);
 }
 
-a.button:active {
+a.button:focus {
+    transform: translate(0, -2px);
     box-shadow: var(--shadow-focus);
 }
 
 a.button.primary {
-    background: var(--color-light-purple);
+    background: hsl(259, 40%, 60%);
     border: 1px solid rgba(69, 48, 115, 0.16);
-    color: var(--color-light);
+    color: var(--color-white);
 }
+a.button.primary:hover {background: hsl(259, 40%, 64%)}
+a.button.primary:focus {background: hsl(259, 40%, 62%)}
 
 a.button.secondary {
     background: transparent;
     border: 1px solid var(--color-light-purple);
     color: var(--color-light-purple);
 }
+a.button.secondary:hover {background: hsl(259, 40%, 96%)}
+a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 
 .button-up {
     display: grid;
@@ -347,6 +360,9 @@ a.button.secondary {
 
 .chapter#chapter-bookbite {
     background: linear-gradient(160deg, var(--bookbite-blue), var(--bookbite-pink));
+    margin: 0 24px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-static-large);
 }
 
 .chapter#chapter-bookbite h1, .chapter#chapter-bookbite h2, .chapter#chapter-bookbite h3, .chapter#chapter-bookbite h4, .chapter#chapter-bookbite h5, .chapter#chapter-bookbite p, .chapter#chapter-bookbite a {
@@ -372,6 +388,26 @@ a.button.secondary {
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+.showcase-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 16px;
+}
+
+.showcase-gallery img:first-child {transform: translateY(-32px)}
+.showcase-gallery img:last-child {transform: translateY(64px)}
+
+.chapter#chapter-bookbite a.button.primary {background: hsl(233, 70%, 100%); color: var(--color-black)}
+.chapter#chapter-bookbite a.button.primary:hover {background:  hsl(233, 70%, 96%)}
+.chapter#chapter-bookbite a.button.primary:focus {background:  hsl(233, 70%, 98%)}
+
+.chapter#chapter-bookbite .logo {
+    height: 96px;
+    width: auto;
+    margin-top: 16px;
 }
 
 
@@ -405,7 +441,7 @@ a.button.secondary {
     padding: 24px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr auto;
     row-gap: 8px;
     border: 1px solid rgba(69, 48, 115, 0.16);
     border-radius: 8px;
@@ -624,7 +660,7 @@ a.button.secondary {
     border-radius: 16px;
     border: 1px solid rgba(69, 48, 115, 0.16);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     box-shadow: var(--shadow-static-large);
 }
 
@@ -632,8 +668,9 @@ a.button.secondary {
     height: auto;
     width: 100%;
     transform: translateY(96px);
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: end;
 }
 
 
@@ -669,7 +706,7 @@ a.button.secondary {
 .section .review-cards .card .review {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr auto;
     row-gap: 8px;
     margin-bottom: 8px;
 }
