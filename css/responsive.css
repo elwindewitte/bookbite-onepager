@@ -18,6 +18,8 @@
 
 
     /* COLUMNS ======== */
+    .grid {column-gap: 48px;}
+
     .c-start-4 {grid-column-start: 3}
     .c-start-4.c-span-6 {grid-column-end: 11}
     .c-start-2 {grid-column-start: 1}
@@ -31,8 +33,8 @@
 
 
     /* CUSTOM GRIDS ======== */
-    .research-cards {grid-template-columns: 1fr 1fr !important;}
-    /* .criteria-cards {grid-template-columns: 1fr !important;} */
+    .research-cards {grid-template-columns: 1fr 1fr !important; column-gap: 24px !important; row-gap: 24px !important;}
+    .criteria-cards {column-gap: 24px !important; row-gap: 24px !important;;}
     .concept-cards {grid-template-columns: 1fr 1fr !important;}
     .review-cards {grid-template-columns: 1fr 1fr !important;}
     .job-story-cards .card {grid-template-columns: 1fr 2fr 1fr !important;} 
@@ -82,6 +84,9 @@
 
 
     /* COLUMNS ======== */
+    .chapter {padding: 192px 48px;}
+    .chapter#chapter-bookbite {margin: 0; border-radius: 0;}
+    .grid {column-gap: 32px; row-gap: 48px;}
     .c-start-4 {grid-column-start: 2}
     .c-start-4.c-span-6 {grid-column-end: 12}
     .c-start-2.c-span-4 {grid-column-end: 13}
@@ -94,12 +99,15 @@
 
 
     /* CUSTOM GRIDS ======== */
-    .research-cards {grid-template-columns: 1fr !important;}
-    .criteria-cards {grid-template-columns: 1fr !important;}
+    .research-cards {grid-template-columns: 1fr !important; column-gap: 16px !important; row-gap: 16px !important;}
+    .criteria-cards {grid-template-columns: 1fr !important; column-gap: 16px !important; row-gap: 16px !important;}
     .concept-cards {grid-template-columns: 1fr !important;}  
     .wireframe-gallery {grid-template-columns: 1fr 1fr !important;}
     .review-cards {grid-template-columns: 1fr !important;}
-    .job-story-cards .card {grid-template-columns: 1fr !important;} 
+    /* JOB STORIES */
+    .job-story-cards .card {grid-template-columns: 1fr !important;}
+    .job-story-cards .job-story {padding:0 16px 8px 16px !important;}
+    .job-story-cards .tag-container {align-items: flex-start !important;}
 }
 
 
@@ -116,6 +124,10 @@
     h1 {
         font-size: 48px;
         line-height: 56px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 28px;
     }
 
 
@@ -139,9 +151,12 @@
     .chapter .header .icon-32 {
         display: inline;
     }
-
+    .chapter {padding: 128px 16px;}
+    .grid {column-gap: 16px; row-gap: 32px;}
     .c-start-4 {grid-column-start: 1}
     .c-start-4.c-span-6 {grid-column-end: 13}
+    .criteria-cards .card {grid-template-columns: 1fr !important;}
+    .criteria-cards .marker {display: none !important;}
 }
 
 
@@ -154,5 +169,5 @@
 /* MOBILE PORTRAIT ======================================== */
 
 @media only screen and (max-width: 320px) {
-    
+    .grid {column-gap: 0;}
 }
