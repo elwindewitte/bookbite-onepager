@@ -32,7 +32,7 @@
 
     /* CUSTOM GRIDS ======== */
     .research-cards {grid-template-columns: 1fr 1fr !important;}
-    .criteria-cards {grid-template-columns: 1fr !important;}
+    /* .criteria-cards {grid-template-columns: 1fr !important;} */
     .concept-cards {grid-template-columns: 1fr 1fr !important;}
     .review-cards {grid-template-columns: 1fr 1fr !important;}
     .job-story-cards .card {grid-template-columns: 1fr 2fr 1fr !important;} 
@@ -40,6 +40,9 @@
 
 
     .chapter#chapter-bookbite .logo {height: 64px}
+
+    .criteria-cards .marker {padding: 12px !important;}
+    .criteria-cards .marker p {font-size: 16px !important; width: 24px !important; line-height: 24px !important;}
 }
 
 
@@ -92,6 +95,7 @@
 
     /* CUSTOM GRIDS ======== */
     .research-cards {grid-template-columns: 1fr !important;}
+    .criteria-cards {grid-template-columns: 1fr !important;}
     .concept-cards {grid-template-columns: 1fr !important;}  
     .wireframe-gallery {grid-template-columns: 1fr 1fr !important;}
     .review-cards {grid-template-columns: 1fr !important;}

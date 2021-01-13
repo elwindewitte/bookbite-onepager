@@ -126,7 +126,7 @@ h1.grey, h2.grey, h3.grey, h4.grey, h5.grey, p.grey, a.grey {
 h1 {
     font-family: var(--font-title);
     font-size: 72px;
-    line-height: 128px;
+    line-height: 80px;
     color: var(--color-dark-purple);
 }
 
@@ -339,6 +339,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     z-index: 1000;
     box-shadow: var(--shadow-static-large);
     border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    transition: top var(--easing) 0.24s;
 }
 
 .navigation .mobile {
@@ -659,6 +660,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: auto;
     row-gap: 16px;
+    column-gap: 8px;
     align-items: start;
     border: 1px solid rgba(69, 48, 115, 0.16);
     border-radius: 8px;
