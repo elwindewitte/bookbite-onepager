@@ -1,8 +1,101 @@
-@media only screen and (max-width: 700px) {
-   .chapter .header .icon-48 {
-       display: none;
-   } 
-   .chapter .header .icon-32 {
-       display: inline;
-   }
+/* These breakpoints are from Webflow */
+
+/* TABLET LANDSCAPE ======================================== */
+
+@media only screen and (max-width: 1184px) {
+    /* COLUMNS ======== */
+    .c-start-4 {grid-column-start: 3}
+    .c-start-4.c-span-6 {grid-column-end: 11}
+    .c-start-2 {grid-column-start: 1}
+    .c-start-2.c-span-10 {grid-column-end: 13}
+    .c-start-6.c-span-6 {grid-column-end: 13}
+    .c-start-7.c-span-5 {grid-column-end: 13}
+    .c-start-3 {grid-column-start: 2;}
+    .c-start-3.c-span-8 {grid-column-end: 12;}
+
+
+
+
+    /* CUSTOM GRIDS ======== */
+    .research-cards {grid-template-columns: 1fr 1fr !important;}
+    .concept-cards {grid-template-columns: 1fr 1fr !important;}
+    .review-cards {grid-template-columns: 1fr 1fr !important;}
+
+
+
+    .chapter#chapter-bookbite .logo {height: 64px}
+}
+
+
+
+
+
+
+
+
+/* TABLET PORTRAIT ======================================== */
+
+@media only screen and (max-width: 768px) {
+
+    /* NAVIGATION ======== */
+    .navigation .marketing h1 {display: none}
+    .navigation .marketing .divider {display: none}
+
+
+
+
+    /* COLUMNS ======== */
+    .c-start-4 {grid-column-start: 2}
+    .c-start-4.c-span-6 {grid-column-end: 12}
+    .c-start-2.c-span-4 {grid-column-end: 13}
+    .c-start-6 {grid-column-start: 1}
+
+
+
+
+    /* CUSTOM GRIDS ======== */
+    .research-cards {grid-template-columns: 1fr !important;}
+    .concept-cards {grid-template-columns: 1fr !important;}  
+    .wireframe-gallery {grid-template-columns: 1fr 1fr !important;}
+    .review-cards {grid-template-columns: 1fr !important;}
+}
+
+
+
+
+
+
+
+/* MOBILE LANDSCAPE ======================================== */
+
+@media only screen and (max-width: 568px) {
+    .navigation .list {
+        grid-template-columns: auto auto;
+    }
+
+    .navigation .mobile {
+        display: inline;
+    }
+
+    .navigation .desktop {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/* MOBILE PORTRAIT ======================================== */
+
+@media only screen and (max-width: 320px) {
+    .chapter .header .icon-48 {
+        display: none;
+    } 
+    .chapter .header .icon-32 {
+        display: inline;
+    }
 }
