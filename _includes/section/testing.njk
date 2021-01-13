@@ -1,0 +1,22 @@
+<div class="section">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Testen</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey">Uiteraard is het ook belangrijk om de functionaliteiten te testen bij de gebruiker. We hebben een usability test gehouden met 6 gebruikers. Hier hebben we de gebruiker een aantal acties uit te voeren door het prototype heen, om te kijken of de functie en de weergave duidelijk is voor de gebruiker. </p>
+            <p class="grey">Ook hebben we achteraf een aantal vragen gesteld om achter hun meningen en ervaringen te komen van het concept. Hier zijn een aantal quotes uitgekomen om nog te verwerken.</p>
+        </div>
+        <div class="review-cards c-start-2 c-span-10">
+            {% for review in collections.review %}
+            <div class="card">
+                <i class="twa twa-2x twa-{{ review.data.emoji }}"></i>
+                <div class="review">
+                    <p class="big">{{ review.data.description }}"</p>
+                    <p class="grey">{{ review.data.name }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
