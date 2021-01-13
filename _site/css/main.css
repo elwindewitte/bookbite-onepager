@@ -126,7 +126,7 @@ h1.grey, h2.grey, h3.grey, h4.grey, h5.grey, p.grey, a.grey {
 h1 {
     font-family: var(--font-title);
     font-size: 72px;
-    line-height: 128px;
+    line-height: 80px;
     color: var(--color-dark-purple);
 }
 
@@ -323,6 +323,80 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 
 
 
+/* NAVIGATION ======================================== */
+
+.navigation {
+    position: fixed;
+    width: auto;
+    width: var(--canvas-width);
+    padding: 24px 48px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-dark-purple);
+    z-index: 1000;
+    box-shadow: var(--shadow-static-large);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    transition: top var(--easing) 0.24s;
+}
+
+.navigation .mobile {
+    display: none;
+}
+
+.navigation .marketing {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.navigation .marketing img {
+    height: 40px;
+    width: auto;
+}
+
+.navigation .marketing .divider {
+    width: 1px;
+    background: var(--color-light-purple);
+    align-self: stretch;
+}
+
+.navigation .marketing h1 {
+    color: var(--color-white);
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.navigation .list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 16px;
+}
+
+.navigation .list .list-item {
+    font-weight: 600;
+    color: var(--color-white);
+    padding: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigation .list #menu-trigger {
+    padding: 8px;
+}
+
+
+
+
+
+
+
+
 /* HEADER ======================================== */
 
 
@@ -335,7 +409,11 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     row-gap: 256px;
     padding: 256px 64px;
     margin: 0;
-    border-bottom: 1px solid #f0f; /* Dev purposes */
+    /* border-bottom: 1px solid #f0f; Dev purposes */
+}
+
+.chapter.light {
+    background: rgba(69, 48, 115, 0.04);
 }
 
 
@@ -363,6 +441,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     margin: 0 24px;
     border-radius: 16px;
     box-shadow: var(--shadow-static-large);
+    display: none; /* Finding the bug */
 }
 
 .chapter#chapter-bookbite h1, .chapter#chapter-bookbite h2, .chapter#chapter-bookbite h3, .chapter#chapter-bookbite h4, .chapter#chapter-bookbite h5, .chapter#chapter-bookbite p, .chapter#chapter-bookbite a {
@@ -505,6 +584,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     column-gap: 32px;
+    row-gap: 32px;
 }
 
 .section .concept-cards .card {
@@ -580,6 +660,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: auto;
     row-gap: 16px;
+    column-gap: 8px;
     align-items: start;
     border: 1px solid rgba(69, 48, 115, 0.16);
     border-radius: 8px;
