@@ -241,6 +241,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     flex-direction: row;
     flex-wrap: wrap;
     justify-self: center;
+    margin: -4px;
 }
 
 .button-up .button {
@@ -491,6 +492,44 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     height: 96px;
     width: auto;
     margin-top: 16px;
+}
+
+
+
+
+/* LIGHT PURPLE, AKA 'CLOSING' ======== */
+
+.chapter.light-purple {
+    background: var(--color-light-purple);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.chapter.light-purple .section {
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.chapter.light-purple h1 {
+    color: var(--color-dark-purple);
+}
+
+.chapter.light-purple p {
+    color: var(--color-white);
+}
+
+.chapter.light-purple h4 {
+    color: hsl(259, 40%, 80%);
+}
+
+.chapter.light-purple .button.primary {
+    background: var(--color-white);
+    color: var(--color-dark-purple);
+}
+
+.chapter.light-purple .button.secondary {
+    border-color: var(--color-white);
+    color: var(--color-white);
 }
 
 
@@ -799,4 +838,57 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 .section .review-cards .card .review p.big::before {
     content: '"';
     margin-left: -8px;
+}
+
+
+
+
+/* CREDIT ======== */
+
+.credit-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+}
+
+.credit-cards .card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    column-gap: 32px;
+}
+
+.credit-cards .card a {
+    color: var(--color-white);
+    text-decoration-color: rgba(255, 255, 255, 0.6);
+}
+
+.credit-cards .card a:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.credit-cards .card .people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -4px;
+}
+
+.credit-cards .card .entity p, .credit-cards .card .entity a {
+    font-weight: 500;
+}
+
+.credit-cards .card .people p, .credit-cards .card .people a {
+    padding: 4px 12px;
+    border: 1px solid rgba(69, 48, 115, 0.24);
+    border-radius: 16px;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.credit-cards .card .people p i, .credit-cards .card .people a i {
+    margin-right: 8px;
 }

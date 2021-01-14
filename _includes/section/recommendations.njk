@@ -1,0 +1,18 @@
+<div class="section" id="recommendations">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Aanbevelingen</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey big">Voor het maken van de wireframes en het prototype hebben we jobstories opgesteld. Ze zijn bedoeld om vast te stellen welke functionaliteiten er in het product horen te zitten. Zo komen we tot een gebruiksvriendelijk eindproduct.</p>
+        </div>
+        <div class="recommendation-cards c-start-2 c-span-10">
+            {% for recommendation in collections.recommendation %}
+            <div class="card">
+                <div class="checkbox"></div>
+                <p>{{ recommendation.data.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

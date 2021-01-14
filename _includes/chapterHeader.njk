@@ -2,6 +2,8 @@
     <div class="grid">
         <div class="column align-center c-start-4 c-span-6">
             {# ICON #}
+            {% if chapter == "Closing"%}
+            {% else %}
             <div class="marker">
                 {% if chapter == "Discovery" %}
                     <img class="icon-48" src="{{ '/' | url }}assets/icons/double-diamond-2-48.svg">
@@ -12,10 +14,9 @@
                 {% elif chapter == "Create" %}
                     <img class="icon-48" src="{{ '/' | url }}assets/icons/double-diamond-4-48.svg">
                     <img class="icon-32" src="{{ '/' | url }}assets/icons/double-diamond-4-32.svg">
-                {% elif chapter == "Closing" %}
-                    Icoontje aub!
                 {% endif %}
             </div>
+            {% endif %}
             <div class="spacer-32"></div>
             {# TITLE #}
             <h1>
@@ -26,7 +27,7 @@
                 {% elif chapter == "Create" %}
                     Creation fase
                 {% elif chapter == "Closing" %}
-                    Closing
+                    Overdragen
                 {% endif %}
             </h1>
             <div class="spacer-32"></div>
