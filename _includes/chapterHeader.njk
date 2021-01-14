@@ -59,7 +59,10 @@
             <div class="spacer-48"></div>
             <div class="button-up">
                 <a class="button primary" href="#{{ firstSection }}">Ontdek hoofdstuk</a>
+                {% if chapter == "Closing" %}
+                {% else %}
                 <a class="button secondary" href="#{{ nextChapter }}">Skip naar volgende</a>
+                {% endif %}
             </div>
         </div>
     </div>
