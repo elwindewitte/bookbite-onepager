@@ -14,6 +14,17 @@
         line-height: 48px;
     }
 
+    #header h1 {
+        font-size: 64px !important;
+        line-height: 80px !important;
+        margin-bottom: 96px !important;
+    }
+
+    #header p.big {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
 
 
 
@@ -28,6 +39,8 @@
     .c-start-7.c-span-5 {grid-column-end: 13}
     .c-start-3 {grid-column-start: 2;}
     .c-start-3.c-span-8 {grid-column-end: 12;}
+    .c-start-2.c-span-6 {grid-column-end: 5;}
+    .c-start-8.c-span-4 {grid-column-start: 5; grid-column-end: 13;}
 
 
 
@@ -68,7 +81,7 @@
         font-size: 32px;
         line-height: 40px;
     }
-    p.big {
+    a.big, p.big {
         font-size: 20px;
         line-height: 28px;
     }
@@ -76,6 +89,14 @@
 
     .showcase-gallery img {
         transform: translate(0, 0) !important;
+    }
+
+    #header {
+        padding: 192px 48px;
+    }
+
+    #header .grid {
+        row-gap: 0;
     }
 
 
@@ -104,6 +125,8 @@
     .c-start-2.c-span-5 {grid-column-end: 13;}
     .c-start-3 {grid-column-start: 1;}
     .c-start-3.c-span-8 {grid-column-end: 13;}
+    .c-start-2.c-span-6 {grid-column-start: 1; grid-column-end: 13;}
+    .c-start-8.c-span-4 {grid-column-start: 1; grid-column-end: 13;}
 
 
 
@@ -140,6 +163,16 @@
         line-height: 28px;
     }
 
+    #header {
+        padding: 192px 24px 128px 24px;
+    }
+
+    #header h1 {
+        font-size: 48px !important;
+        line-height: 64px !important;
+        margin-bottom: 64px !important;
+    }
+
 
 
     .navigation {
@@ -154,6 +187,10 @@
         display: inline;
     }
 
+    .navigation #menu-trigger {
+        display: flex !important;
+    }
+
     .navigation .desktop {
         display: none;
     }
@@ -164,7 +201,7 @@
     .chapter .header .icon-32 {
         display: inline;
     }
-    .chapter {padding: 128px 16px; row-gap: 128px;}
+    .chapter {padding: 128px 24px; row-gap: 128px;}
     .grid {column-gap: 16px; row-gap: 32px;}
     .column.align-center {
         text-align: left !important;
@@ -191,4 +228,8 @@
 
 @media only screen and (max-width: 320px) {
     .grid {column-gap: 0;}
+    #header, .chapter {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }

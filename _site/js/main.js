@@ -21,14 +21,17 @@ function toggleMenu() {
   if (!(menuOpen == 'true') && !(menuOpen == 'false')) {
     menu.classList.add('visible');
     menu.classList.remove('hidden');
+    menuTrigger.innerHTML = '<a class="list-item">Menu</a><img src="/assets/icons/close-24.svg">';
     localStorage.setItem('menuOpen', 'true');
   } else if (menuOpen == 'true') {
     menu.classList.add('hidden');
     menu.classList.remove('visible');
+    menuTrigger.innerHTML = '<a class="list-item">Menu</a><img src="/assets/icons/menu-24.svg">';
     localStorage.setItem('menuOpen', 'false');
   } else if (menuOpen == 'false') {
     menu.classList.add('visible');
     menu.classList.remove('hidden');
+    menuTrigger.innerHTML = '<a class="list-item">Menu</a><img src="/assets/icons/close-24.svg">';
     localStorage.setItem('menuOpen', 'true');
   }
 }

@@ -29,17 +29,16 @@
         <a class="list-item desktop" href="#discovery">Discovery</a>
         <a class="list-item desktop" href="#ideation">Ideation</a>
         <a class="list-item desktop" href="#create">Creation</a>
-        <div class="mobile" id="menu-trigger">
-            <a class="list-item mobile" onclick="toggleMenu()">Menu</a>
-            <img id="stateOpen" src="/assets/icons/menu-24.svg">
-            <img id="stateClosed" src="/assets/icons/menu-24.svg">
+        <div class="mobile" id="menu-trigger" onclick="toggleMenu()">
+            <a class="list-item">Menu</a>
+            <img src="/assets/icons/menu-24.svg">
         </div>
     </div>
 </div>
-<div class="menu" id="menu">
+<div class="menu hidden" id="menu">
     <div class="list">
         
-        <a class="item">
+        <a class="item" href="#discovery" onclick="toggleMenu()">
             <div class="marker">
                 <img src="/assets/icons/double-diamond-2-32.svg">
             </div>
@@ -47,7 +46,7 @@
         </a>
 
         
-        <a class="item">
+        <a class="item" href="#ideation" onclick="toggleMenu()">
             <div class="marker">
                 <img src="/assets/icons/double-diamond-3-32.svg">
             </div>
@@ -55,7 +54,7 @@
         </a>
 
         
-        <a class="item">
+        <a class="item" href="#create" onclick="toggleMenu()">
             <div class="marker">
                 <img src="/assets/icons/double-diamond-4-32.svg">
             </div>
@@ -63,7 +62,7 @@
         </a>
 
         
-        <a class="item">
+        <a class="item" href="#closing" onclick="toggleMenu()">
             <div class="marker">
                 <img src="/assets/icons/check-32.svg">
             </div>
@@ -163,18 +162,18 @@
             </div>
             
             <div class="card">
+                <p class="big">Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p>
+                <p class="grey">Desk research</p>
+            </div>
+            
+            <div class="card">
+                <p class="big">Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p>
+                <p class="grey">Desk research</p>
+            </div>
+            
+            <div class="card">
                 <p class="big">"Ik heb te weinig tijd om te lezen."</p>
                 <p class="grey">Interview</p>
-            </div>
-            
-            <div class="card">
-                <p class="big">Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p>
-                <p class="grey">Desk research</p>
-            </div>
-            
-            <div class="card">
-                <p class="big">Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p>
-                <p class="grey">Desk research</p>
             </div>
             
         </div>
@@ -451,63 +450,11 @@
             
             <div class="card">
                 <div class="name">
-                    <i class="twa twa-page-facing-up"></i>
-                    <p>Menu</p>
-                </div>
-                <div class="job-story">
-                    <p>When I&#39;m on any page, I want to be able to navigate through the product, so I can find the new page I&#39;m looking for.</p>
-                </div>
-                <div class="tag-container">
-                    <div class="tag must-have">Must have</div>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="name">
-                    <i class="twa twa-magnifying-glass-tilted-right"></i>
-                    <p>Search books</p>
-                </div>
-                <div class="job-story">
-                    <p>When I&#39;m looking for a new book to read, I want to search for it, so I can find it quickly and easily.</p>
-                </div>
-                <div class="tag-container">
-                    <div class="tag must-have">Must have</div>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="name">
                     <i class="twa twa-gear"></i>
                     <p>Audio settings</p>
                 </div>
                 <div class="job-story">
                     <p>When the book has audio, I want to be able to turn it on and off, so I can have control over when I want to use audio while I read.</p>
-                </div>
-                <div class="tag-container">
-                    <div class="tag must-have">Must have</div>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="name">
-                    <i class="twa twa-house"></i>
-                    <p>Home page</p>
-                </div>
-                <div class="job-story">
-                    <p>When I am using the product, I want to have a page where I can go back to every time, so I can find my way through the product.</p>
-                </div>
-                <div class="tag-container">
-                    <div class="tag must-have">Must have</div>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="name">
-                    <i class="twa twa-sparkles"></i>
-                    <p>Visuals in background</p>
-                </div>
-                <div class="job-story">
-                    <p>When I read a book with visuals in the background, I want to be able to see the text clearly, so I can read properly and not be disctracted.</p>
                 </div>
                 <div class="tag-container">
                     <div class="tag must-have">Must have</div>
@@ -542,11 +489,63 @@
             
             <div class="card">
                 <div class="name">
+                    <i class="twa twa-house"></i>
+                    <p>Home page</p>
+                </div>
+                <div class="job-story">
+                    <p>When I am using the product, I want to have a page where I can go back to every time, so I can find my way through the product.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-page-facing-up"></i>
+                    <p>Menu</p>
+                </div>
+                <div class="job-story">
+                    <p>When I&#39;m on any page, I want to be able to navigate through the product, so I can find the new page I&#39;m looking for.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
                     <i class="twa twa-floppy-disk"></i>
                     <p>Privacy settings</p>
                 </div>
                 <div class="job-story">
                     <p>When I&#39;m not satisfied with the way the product uses my data, I want to change them, so I can feel safe using the product.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-magnifying-glass-tilted-right"></i>
+                    <p>Search books</p>
+                </div>
+                <div class="job-story">
+                    <p>When I&#39;m looking for a new book to read, I want to search for it, so I can find it quickly and easily.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-sparkles"></i>
+                    <p>Visuals in background</p>
+                </div>
+                <div class="job-story">
+                    <p>When I read a book with visuals in the background, I want to be able to see the text clearly, so I can read properly and not be disctracted.</p>
                 </div>
                 <div class="tag-container">
                     <div class="tag must-have">Must have</div>
@@ -713,16 +712,16 @@
             <div class="card">
                 <div class="checkbox"></div>
                 <div class="content">
-                    <h4>Cross-platform</h4>
-                    <p>Het product kan nog uitgebreid worden naar zowel tablet, als desktop. Aan te raden hiervoor React of Electron te gebruiken.</p>
+                    <h4>Andere leesvormen</h4>
+                    <p>Ook de mogelijkheid bieden tot luisterboeken. Misschien zelf de gebruikers hun eigen luisterboeken laten maken.</p>
                 </div>
             </div>
             
             <div class="card">
                 <div class="checkbox"></div>
                 <div class="content">
-                    <h4>User generated content</h4>
-                    <p>Een extra social aspect aan het product, zou het maken en delen van eigen visualisaties, muziek, en sound effects kunnen zijn.</p>
+                    <h4>Cross-platform</h4>
+                    <p>Het product kan nog uitgebreid worden naar zowel tablet, als desktop. Aan te raden hiervoor React of Electron te gebruiken.</p>
                 </div>
             </div>
             
@@ -737,14 +736,6 @@
             <div class="card">
                 <div class="checkbox"></div>
                 <div class="content">
-                    <h4>Verbeteringen leeservaring</h4>
-                    <p>De leeservaring is te verbeteren door de soundtrack lanzaam in te laten faden, pagina&#39;s te gebruiken ipv scrollen, maar vooral ook berichten te blokken voor de extra concentratie.</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="checkbox"></div>
-                <div class="content">
                     <h4>Verbeteringen privacy</h4>
                     <p>Gebruikers meer de mogelijkheid geven hun eigen data en privacy aan te passen. Optie tussen data- en/of verwijderen bijvoorbeeld.</p>
                 </div>
@@ -753,8 +744,16 @@
             <div class="card">
                 <div class="checkbox"></div>
                 <div class="content">
-                    <h4>Andere leesvormen</h4>
-                    <p>Ook de mogelijkheid bieden tot luisterboeken. Misschien zelf de gebruikers hun eigen luisterboeken laten maken.</p>
+                    <h4>Verbeteringen leeservaring</h4>
+                    <p>De leeservaring is te verbeteren door de soundtrack lanzaam in te laten faden, pagina&#39;s te gebruiken ipv scrollen, maar vooral ook berichten te blokken voor de extra concentratie.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="checkbox"></div>
+                <div class="content">
+                    <h4>User generated content</h4>
+                    <p>Een extra social aspect aan het product, zou het maken en delen van eigen visualisaties, muziek, en sound effects kunnen zijn.</p>
                 </div>
             </div>
             

@@ -13,7 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     box-sizing: border-box;
     line-height: 1.2;
     kerning: none !important;
-    z-index: 1;
+    z-index: 10;
     /* outline: 1px solid rgba(255, 0, 0, 1); */
 
     -moz-osx-font-smoothing: grayscale;
@@ -397,7 +397,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 }
 
 .navigation .list #menu-trigger {
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
@@ -422,6 +422,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 /* MENU ======================================== */
 
 .menu {
+    display: block;
     position: fixed;
     z-index: 900;
     background: var(--color-dark-purple);
@@ -429,7 +430,11 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     height: var(--canvas-height);
     width: var(--canvas-width);
     align-items: start;
+    transition: transform var(--easing) 0.4s;
 }
+
+.menu.hidden {transform: translateX(-100%);}
+.menu.visible {transform: translateX(0);}
 
 .menu .marker {
     padding: 16px;
@@ -456,11 +461,13 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
+    column-gap: 24px;
+    align-items: center;
 }
 
 .menu h1 {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 40px;
     color: var(--color-white);
 }
 
