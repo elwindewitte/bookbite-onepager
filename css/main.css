@@ -753,7 +753,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 
 .section .research-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     column-gap: 32px;
     row-gap: 32px;
@@ -767,6 +767,15 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     row-gap: 8px;
     border: 1px solid rgba(69, 48, 115, 0.16);
     border-radius: 8px;
+}
+
+.section .research-cards p.quote::before {
+    content: '"';
+    margin-left: -8px;
+}
+
+.section .research-cards p.quote::after {
+    content: '"';
 }
 
 
@@ -1032,7 +1041,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     row-gap: 8px;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 .section .review-cards .card .review p.big::before {
