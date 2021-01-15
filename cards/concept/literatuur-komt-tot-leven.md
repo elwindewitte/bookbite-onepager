@@ -2,7 +2,7 @@
 tags: concept
 name: Literatuur Komt Tot Leven
 number: 2
-description: Bij dit concept nemen we de lezer mee in het verhaal. We willen bij verschillende genre’s fysieke voorwerpen meeleveren die onderdeel zijn van het verhaal. Deze voorwerpen zitten in een doos met QR-codes die een interactie bieden met de lezer en tot nadenken zetten. Hierdoor wordt de lezer een onderdeel van het verhaal.
+description: Dit concept neemt literatuur mee naar de buitenwereld. We willen op verschillende manieren literatuur (verhaal of gedichten) vormgeven op gebouwen en huizen door een stad. Hierdoor kan de lezer het verhaal volgen in een zoektocht, maar ook de stad leren kennen.
 date: 2021-01-02
 cover: concept-2.png
 ---

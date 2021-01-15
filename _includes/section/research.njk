@@ -9,7 +9,11 @@
         <div class="research-cards c-start-2 c-span-10">
             {% for research in collections.research %}
             <div class="card">
-                <p class="big">{% if research.data.researchMethod == "Interview" %}"{{ research.data.researchInsight }}"{% else %}{{ research.data.researchInsight }}{% endif %}</p>
+                {% if research.data.researchMethod == "Interview" %}
+                <p class="big quote">{{ research.data.researchInsight }}</p>
+                {% else %}
+                <p class="big">{{ research.data.researchInsight }}</p>
+                {% endif %}
                 <p class="grey">{{ research.data.researchMethod }}</p>
             </div>
             {% endfor %}
