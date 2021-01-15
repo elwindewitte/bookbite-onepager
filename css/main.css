@@ -524,6 +524,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     grid-template-rows: auto;
     padding: 192px 64px;
     column-gap: 64px;
+    row-gap: 64px;
     background: var(--color-dark-purple)
 }
 
@@ -678,14 +679,14 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 
 .chapter.light-purple {
     background: var(--color-light-purple);
-    padding-left: 0;
-    padding-right: 0;
+    /* padding-left: 0;
+    padding-right: 0; */
 }
 
-.chapter.light-purple .section {
+/* .chapter.light-purple .section {
     padding-left: 64px;
     padding-right: 64px;
-}
+} */
 
 .chapter.light-purple h1 {
     color: var(--color-white);
@@ -1104,6 +1105,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     column-gap: 32px;
+    row-gap: 16px;
 }
 
 .credit-cards .card a {
