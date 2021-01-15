@@ -397,7 +397,71 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 }
 
 .navigation .list #menu-trigger {
-    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.navigation .list #menu-trigger img {
+    margin: 8px;
+    width: 24px;
+}
+
+.navigation #stateClosed {
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+/* MENU ======================================== */
+
+.menu {
+    position: fixed;
+    z-index: 900;
+    background: var(--color-dark-purple);
+    padding: 136px 24px 64px 24px;
+    height: var(--canvas-height);
+    width: var(--canvas-width);
+    align-items: start;
+}
+
+.menu .marker {
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 32px;
+    justify-self: start;
+}
+
+.menu .marker img {
+    width: 32px;
+    height: 32px;
+}
+
+.menu .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+}
+
+.menu .list .item {
+    border-radius: 4px;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+}
+
+.menu h1 {
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--color-white);
 }
 
 

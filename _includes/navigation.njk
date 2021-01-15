@@ -8,7 +8,10 @@
         <a class="list-item desktop" href="#discovery">Discovery</a>
         <a class="list-item desktop" href="#ideation">Ideation</a>
         <a class="list-item desktop" href="#create">Creation</a>
-        <a class="list-item mobile">Menu</a>
-        <img id="menu-trigger" src="{{ '/' | url }}assets/icons/menu-24.svg">
+        <div class="mobile" id="menu-trigger">
+            <a class="list-item mobile" onclick="toggleMenu()">Menu</a>
+            <img id="stateOpen" src="{{ '/' | url }}assets/icons/menu-24.svg">
+            <img id="stateClosed" src="{{ '/' | url }}assets/icons/menu-24.svg">
+        </div>
     </div>
 </div>
