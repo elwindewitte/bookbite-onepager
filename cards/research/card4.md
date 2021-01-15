@@ -1,5 +1,5 @@
 ---
 tags: research
-researchInsight: Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.
-researchMethod: Desk research
+researchInsight: Merendeels van de doelgroep zou geïnteresseerd zijn om literatuur op een andere manier te ervaren.
+researchMethod: Enquete
 ---
