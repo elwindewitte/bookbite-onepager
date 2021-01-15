@@ -13,6 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     box-sizing: border-box;
     line-height: 1.2;
     kerning: none !important;
+    word-break: break-word;
     z-index: 10;
     /* outline: 1px solid rgba(255, 0, 0, 1); */
 
