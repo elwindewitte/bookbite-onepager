@@ -167,6 +167,7 @@ a {
     text-decoration-color: rgba(0, 0, 0, 0.4);
     text-underline-offset: 4px;
     transition: text-decoration-color var(--easing) 0.16s;
+    cursor: pointer;
 }
 
 a:hover {
@@ -592,7 +593,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     row-gap: 256px;
-    padding: 256px 64px;
+    padding: 256px 0;
     margin: 0;
     /* border-bottom: 1px solid #f0f; Dev purposes */
 }
@@ -745,6 +746,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding: 0 64px;
 }
 
 
@@ -1151,3 +1153,207 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 .credit-cards .card .people p i, .credit-cards .card .people a i {
     margin-right: 8px;
 }
+
+
+
+
+
+
+
+
+/* STYLEGUIDE ======== */
+
+#styleguide {
+    padding-top: 192px;
+    padding-bottom: 192px;
+    transition: background-color var(--easing) 0.24s;
+}
+
+#styleguide .grid {
+    align-items: start;
+    grid-template-rows: auto auto 1fr;
+}
+
+#styleguide h4 {
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+}
+
+/* TOGGLE */
+
+#styleguide #toggleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#styleguide .toggle-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 16px;
+}
+
+#styleguide .toggle-wrapper h4 {
+    padding: 0;
+    text-transform: none;
+    border: none;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#styleguide .toggle-wrapper .toggle {
+    width: 48px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid;
+}
+
+#styleguide .toggle-wrapper .toggle .dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background: white;
+    margin: 3px;
+    transition: transform var(--easing) 0.16s;
+}
+
+/* LOGOS */
+
+#styleguide .logo-wrapper {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+}
+
+#styleguide .logo-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 16px;
+}
+
+#styleguide .logo-cards .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 8px;
+}
+
+#styleguide .logo-cards .card img {
+    width: 100%;
+    max-height: 96px;
+}
+
+/* COLORS */
+
+#styleguide .color-wrapper {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+}
+
+#styleguide .color-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+}
+
+#styleguide .color-cards .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 8px;
+}
+
+#styleguide .color-cards .color {
+    width: 100%;
+    display: block;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+#styleguide .color-cards .color:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+/* FONTS */
+
+#styleguide .font-cards {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 16px;
+}
+
+#styleguide .font-cards .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 8px;
+    margin-bottom: 16px;
+}
+
+#styleguide .font-cards p.font {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+#styleguide .font-cards p.font.lora {font-family: 'Lora', 'Inter', sans-serif;}
+#styleguide .font-cards p.font.epilogue-bold {font-family: 'Epilogue', 'Inter', sans-serif; font-weight: 600;}
+#styleguide .font-cards p.font.epilogue-reg {font-family: 'Epilogue', 'Inter', sans-serif; font-weight: 400;}
+
+/* LIGHT THEME */
+
+#styleguide.light {
+    background: #eceff2;
+}
+
+#styleguide.light .color-cards .color {
+    border-color: rgba(0, 0, 0, 0.16);
+}
+
+#styleguide.light .color-cards .color.primary {background: #ff6da1;}
+#styleguide.light .color-cards .color.secondary {background: #3564dc;}
+#styleguide.light .color-cards .color.background {background: #eceff2;}
+#styleguide.light .color-cards .color.white {background: #fbfaff;}
+#styleguide.light .color-cards .color.black {background: #202632;}
+#styleguide.light h4 {color: #202632; border-color: rgba(0, 0, 0, 0.16);}
+#styleguide.light p {color: #202632;}
+#styleguide.light .toggle-wrapper .toggle {background-color: #eceff2; border-color: rgba(0, 0, 0, 0.16);}
+#styleguide.light .toggle-wrapper .toggle .dot {transform: translateX(0);}
+
+/* DARK THEME */
+
+#styleguide.dark {
+    background: #202632;
+}
+
+#styleguide.dark .color-cards .color {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+#styleguide.dark .color-cards .color.primary {background: #ff6da1;}
+#styleguide.dark .color-cards .color.secondary {background: #3564dc;}
+#styleguide.dark .color-cards .color.background {background: #202632;}
+#styleguide.dark .color-cards .color.white {background: #fbfaff;}
+#styleguide.dark .color-cards .color.black {background: #35415b;}
+#styleguide.dark h4 {color: #fbfaff; border-color: rgba(255, 255, 255, 0.16);}
+#styleguide.dark p {color: #fbfaff;}
+#styleguide.dark .toggle-wrapper .toggle {background-color: #3564dc; border-color: rgba(255, 255, 255, 0.16);}
+#styleguide.dark .toggle-wrapper .toggle .dot {transform: translateX(16px);}
