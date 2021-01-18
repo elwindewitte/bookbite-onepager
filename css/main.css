@@ -1192,6 +1192,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     column-gap: 16px;
+    cursor: pointer;
 }
 
 #styleguide .toggle-wrapper h4 {
@@ -1235,6 +1236,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 16px;
+    row-gap: 16px;
 }
 
 #styleguide .logo-cards .card {
@@ -1266,6 +1268,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 16px;
+    row-gap: 16px;
 }
 
 #styleguide .color-cards .card {

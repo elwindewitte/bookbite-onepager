@@ -63,6 +63,10 @@
     .job-story-cards .card {grid-template-columns: 1fr 2fr 1fr !important;}
     .wireframe-gallery {column-gap: 32px !important; row-gap: 32px !important;}
     .recommendation-cards {grid-template-columns: 1fr 1fr !important;}
+    #styleguide .logo-cards {grid-template-columns: 1fr !important;}
+    #styleguide .color-cards {grid-template-columns: 1fr 1fr 1fr !important;}
+    #styleguide .logo-wrapper, #styleguide .color-wrapper {grid-column-start: 1;}
+    #styleguide .font-cards {grid-column-end: 13;}
 
 
 
@@ -167,6 +171,12 @@
     .job-story-cards .card {grid-template-columns: 1fr !important;}
     .job-story-cards .job-story {padding:0 16px 8px 16px !important;}
     .job-story-cards .tag-container {align-items: flex-start !important;}
+    /* STYLEGUIDE */
+    #styleguide .grid {grid-template-rows: auto auto auto auto;}
+    #styleguide .logo-wrapper, #styleguide .color-wrapper, #styleguide .font-cards {grid-column-start: 1; grid-column-end: 13;}
+    #styleguide .logo-wrapper {grid-row-start: 2; grid-row-end: 3;}
+    #styleguide .color-wrapper {grid-row-start: 3; grid-row-end: 4;}
+    #styleguide .font-cards {grid-row-start: 4; grid-row-end: 5;}
 }
 
 
@@ -264,4 +274,6 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    #styleguide .color-cards {grid-template-columns: 1fr 1fr !important;}
 }
