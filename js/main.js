@@ -1,3 +1,35 @@
+window.onload = function () {
+  var toggleSection = document.getElementById('styleguide');
+  var assetLogo = document.getElementById('assetLogo');
+  var assetWordmark = document.getElementById('assetWordmark');
+  var colorTheme = localStorage.getItem('theme');
+
+  if (!(colorTheme == 'light') && !(colorTheme == 'dark')) {
+    toggleSection.classList.add('dark');
+    toggleSection.classList.remove('light');
+    localStorage.setItem('theme', 'dark');
+    // Changing the logos
+    assetLogo.innerHTML = '<img src="/assets/logos/bookbite-logo-light.svg"><p class="description">Logo</p>';
+    assetWordmark.innerHTML = '<img src="/assets/logos/bookbite-wordmark-light.svg"><p class="description">Wordmark</p>';
+
+  } else if (colorTheme == 'light') {
+    toggleSection.classList.add('dark');
+    toggleSection.classList.remove('light');
+    localStorage.setItem('theme', 'dark');
+    // Changing the logos
+    assetLogo.innerHTML = '<img src="/assets/logos/bookbite-logo-dark.svg"><p class="description">Logo</p>';
+    assetWordmark.innerHTML = '<img src="/assets/logos/bookbite-wordmark-dark.svg"><p class="description">Wordmark</p>';
+
+  } else if (colorTheme == 'dark') {
+    toggleSection.classList.add('light');
+    toggleSection.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+    // Changing the logos
+    assetLogo.innerHTML = '<img src="/assets/logos/bookbite-logo-light.svg"><p class="description">Logo</p>';
+    assetWordmark.innerHTML = '<img src="/assets/logos/bookbite-wordmark-light.svg"><p class="description">Wordmark</p>';
+  }
+}
+
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -42,19 +74,32 @@ function toggleLightDark() {
   var toggleContainer = document.getElementById('toggleContainer');
   var textLightMode = document.getElementById('textLightMode');
   var textDarkMode = document.getElementById('textDarkMode');
+  var assetLogo = document.getElementById('assetLogo');
+  var assetWordmark = document.getElementById('assetWordmark');
   var colorTheme = localStorage.getItem('theme');
 
   if (!(colorTheme == 'light') && !(colorTheme == 'dark')) {
     toggleSection.classList.add('dark');
     toggleSection.classList.remove('light');
     localStorage.setItem('theme', 'dark');
+    // Changing the logos
+    assetLogo.innerHTML = '<img src="/assets/logos/bookbite-logo-light.svg"><p class="description">Logo</p>';
+    assetWordmark.innerHTML = '<img src="/assets/logos/bookbite-wordmark-light.svg"><p class="description">Wordmark</p>';
+
   } else if (colorTheme == 'light') {
     toggleSection.classList.add('dark');
     toggleSection.classList.remove('light');
     localStorage.setItem('theme', 'dark');
+    // Changing the logos
+    assetLogo.innerHTML = '<img src="/assets/logos/bookbite-logo-dark.svg"><p class="description">Logo</p>';
+    assetWordmark.innerHTML = '<img src="/assets/logos/bookbite-wordmark-dark.svg"><p class="description">Wordmark</p>';
+
   } else if (colorTheme == 'dark') {
     toggleSection.classList.add('light');
     toggleSection.classList.remove('dark');
     localStorage.setItem('theme', 'light');
+    // Changing the logos
+    assetLogo.innerHTML = '<img src="/assets/logos/bookbite-logo-light.svg"><p class="description">Logo</p>';
+    assetWordmark.innerHTML = '<img src="/assets/logos/bookbite-wordmark-light.svg"><p class="description">Wordmark</p>';
   }
 }
