@@ -4,10 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         
         <!--LINKS-->
+        <link rel="stylesheet" href="/css/twemoji-amazing.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/responsive.css">
         <script src="/js/main.js"></script>
-        <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
         
         <!--GOOGLE/META-->
         
@@ -18,200 +18,980 @@
         <meta name="reply-to" content="elwindewitte@gmail.com"/>
     </head>
     <body>
+        <!-- NAVIGATION -->
+<div class="navigation" id="navigation">
+    <div class="marketing">
+        <img src="/assets/logos/silverpoint.svg">
+        <div class="divider desktop"></div>
+        <h1 class="desktop">Silverpoint</h1>
+    </div>
+    <div class="list">
+        <a class="list-item desktop" href="#discovery">Discovery</a>
+        <a class="list-item desktop" href="#ideation">Ideation</a>
+        <a class="list-item desktop" href="#create">Creation</a>
+        <div class="mobile" id="menu-trigger" onclick="toggleMenu()">
+            <a class="list-item">Menu</a>
+            <img src="/assets/icons/menu-24.svg">
+        </div>
+    </div>
+</div>
+<div class="menu hidden" id="menu">
+    <div class="list">
         
-<header id="header">
+        <a class="item" href="#discovery" onclick="toggleMenu()">
+            <div class="marker">
+                <img src="/assets/icons/double-diamond-2-32.svg">
+            </div>
+            <h1>Discovery</h1>
+        </a>
+
+        
+        <a class="item" href="#ideation" onclick="toggleMenu()">
+            <div class="marker">
+                <img src="/assets/icons/double-diamond-3-32.svg">
+            </div>
+            <h1>Ideation</h1>
+        </a>
+
+        
+        <a class="item" href="#create" onclick="toggleMenu()">
+            <div class="marker">
+                <img src="/assets/icons/double-diamond-4-32.svg">
+            </div>
+            <h1>Create</h1>
+        </a>
+
+        
+        <a class="item" href="#closing" onclick="toggleMenu()">
+            <div class="marker">
+                <img src="/assets/icons/check-32.svg">
+            </div>
+            <h1>Overdragen</h1>
+        </a>
+    </div>
+</div>
+
+<!-- HEADER -->
+<div class="header" id="header">
     <div class="grid">
-        <div class="column c-start-2 c-end-8">
-            <h1 class="light">Silverpoint</h1>
+        <div class="column c-start-2 c-span-10">
+            <h1>Een leeservaring<br>voor jongeren</h1>
+        </div>
+        <div class="column c-start-2 c-span-4">
+            <p class="big">Hoe kunnen we jongeren stimuleren om op een innovatieve manier meer literatuur te consumeren?</p>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p>Dit semester hebben wij ontworpen voor de Koninklijke Bibliotheek. Zij zijn naar ons toegestapt met een interessante vraag. Zij hebben namelijk gemerkt dat de doelgroep jongeren niet erg geïnteresseerd zijn in het lezen van literatuur en het amper consumeren, ook online. Zo hebben ze dus ons gevraagd een nieuwe, innovatieve manier te bedenken om (digitaal) literatuur te kunnen consumeren. Denk hier aan het prikkelen van verschillende zintuigen, out of the box thinking en nieuwe technologieën. De opdracht is niet gebonden aan een specifieke doelgroep onder de jongeren, deze is aan ons om te specificeren.</p>
+        </div>
+    </div>
+</div>
+
+<!-- CHAPTER: DISCOVERY -->
+<div class="chapter light" id="discovery">
+    
+    
+    
+    <div class="header">
+    <div class="grid">
+        <div class="column align-center c-start-4 c-span-6">
+            
+            
+            <div class="marker">
+                
+                    <img class="icon-48" src="/assets/icons/double-diamond-2-48.svg">
+                    <img class="icon-32" src="/assets/icons/double-diamond-2-32.svg">
+                
+            </div>
+            
             <div class="spacer-32"></div>
-            <p class="big light">Een <a class="big light" href="">Minor IUXD</a> team</p>
+            
+            <h1>
+                
+                    Discovery fase
+                
+            </h1>
+            <div class="spacer-32"></div>
+            
+            <h4>Hoofdstuk 
+                
+                    1
+                
+            </h4>
+            <div class="spacer-48"></div>
+            
+            <p class="big">
+                
+                    Tijdens de discovery fase hebben wij aan de hand van verschillende methoden en technieken onderzoek gedaan naar de doelgroep, de opdrachtgever en de context van de opdracht. Aan de hand van deze onderzoeksresultaten kunnen we ervoor zorgen dat ons eindproduct goed aansluit bij de wensen van de verschillende stakeholders.
+                
+            </p>
+            <div class="spacer-48"></div>
+            <div class="button-up">
+                <a class="button primary" href="#research">Ontdek hoofdstuk</a>
+                
+                <a class="button secondary" href="#ideation">Skip naar volgende</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="section" id="concepting">
+    <div class="grid">
+        <div class="column c-start-2 c-span-6">
+            <img src="/assets/images/stakeholder-map.svg">
+        </div>
+        <div class="column align-self-center c-start-8 c-span-4">
+            <h2>Stakeholders</h2>
+            <div class="spacer-48"></div>
+            <p class="big grey">Aan het begin van de minor hebben we een workshop gedaan samen met onze opdrachtgever Marianne en docent Bruce. Met hun hebben we de stakeholders van de <a class="big grey">Koninklijke Bibliotheek</a> duidelijk in kaart kunnen brengen.</p>
+        </div>
+    </div>
+</div>
+    <div class="section" id="research">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Onderzoek</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey big">Wij hebben onderzoek gedaan door middel van deskresearch, interviews, enquêtes, onderzoek naar technische mogelijkheden, brand-research en onderzoek naar verschillende doelgroepen. Uit het onderzoek hebben we de belangrijkste inzichten gehaald, die hieronder beschreven staan.</p>
+        </div>
+        <div class="research-cards c-start-2 c-span-10">
+            
+            <div class="card">
+                
+                <p class="big">Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p>
+                
+                <p class="grey">Desk research</p>
+            </div>
+            
+            <div class="card">
+                
+                <p class="big quote">Ik heb te weinig tijd om te lezen.</p>
+                
+                <p class="grey">Interview</p>
+            </div>
+            
+            <div class="card">
+                
+                <p class="big">Ook is er bij jongeren een daling te zien in leestijd binnen de afgelopen 5 jaar terwijl deze bij ouderen stabiel bleef.</p>
+                
+                <p class="grey">Enquete</p>
+            </div>
+            
+            <div class="card">
+                
+                <p class="big quote">Ik lees liever fysieke boeken of op mijn telefoon.</p>
+                
+                <p class="grey">Interview</p>
+            </div>
+            
+            <div class="card">
+                
+                <p class="big">Merendeels van de doelgroep zou geïnteresseerd zijn om literatuur op een andere manier te ervaren.</p>
+                
+                <p class="grey">Enquete</p>
+            </div>
+            
+            <div class="card">
+                
+                <p class="big quote">Ik heb niet genoeg concentratie om te lezen.</p>
+                
+                <p class="grey">Interview</p>
+            </div>
+            
+            <div class="card">
+                
+                <p class="big">De reden waarom de doelgroep leest is het vaakst &quot;om te ontsnappen aan de realiteit&quot;.</p>
+                
+                <p class="grey">Enquete</p>
+            </div>
+            
+            <div class="card">
+                
+                <p class="big quote">Ik ben niet geïnteresseerd in literatuur.</p>
+                
+                <p class="grey">Interview</p>
+            </div>
+            
+            <div class="card">
+                
+                <p class="big">Het blijkt dat de Nederlandse jeugd nog minder leest dan dat wij dachten.</p>
+                
+                <p class="grey">Enquete</p>
+            </div>
             
         </div>
-
-        <div class="column c-start-8 c-end-12 r-start-1 r-end-3"><p>werkt dit goed?</p></div>
-
-        
-        <div class="project-details c-start-2 c-end-8">
-            <div class="property"><p>Periode</p></div><div class="value"><p>September 2020 t/m January 2021</p></div>
-            <div class="property"><p>School</p></div><div class="value"><a href="https://www.hogeschoolrotterdam.nl/">Hogeschool Rotterdam</a></div>
-            <div class="property"><p>Vak</p></div><div class="value"><a href="https://expo.iuxd.nl/">Minor IUXD</a></div>
-            <div class="property"><p>Opdrachtgever</p></div><div class="value"><a href="https://www.kb.nl/">Koninklijke Bibliotheek</a></div>
+    </div>
+</div>
+    <div class="section">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Criteria</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey big">Voor ons ontwerp hebben we uiteraard een aantal ontwerp criteria opgesteld om te voldoen aan de behoeftes van de stakeholders.</p>
+        </div>
+        <div class="criteria-cards c-start-2 c-span-10">
+            
+            <div class="card">
+                <div class="marker">
+                    <p>1</p>
+                </div>
+                <div class="text">
+                    <h3>De plek van digitale literatuur</h3>
+                    <p>Het project laat zien dat er ook buiten exposities, festivals en musea een markt is voor producten op het snijvlak van digitale literatuur en media.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="marker">
+                    <p>2</p>
+                </div>
+                <div class="text">
+                    <h3>Multimedia</h3>
+                    <p>Het kan gaan om verschillende elementen waarin fysieke uitingen en digitale toepassingen met elkaar verweven zijn, zoals in een expositie met een app, maar dat is geen vereiste.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="marker">
+                    <p>3</p>
+                </div>
+                <div class="text">
+                    <h3>Schaalbaarheid</h3>
+                    <p>Idealiter is het ontwerp verplaatsbaar en/of opschaalbaar naar andere vestigingen of plekken.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="marker">
+                    <p>4</p>
+                </div>
+                <div class="text">
+                    <h3>User-centered</h3>
+                    <p>Het product is gericht op jongeren en moet op hun behoeften aansluiten.</p>
+                </div>
+            </div>
+            
         </div>
     </div>
-</header>
+</div>
+</div>
 
-
-<section id="" class="top-256 bottom-128">
+<!-- CHAPTER: IDEATION -->
+<div class="chapter" id="ideation">
+    
+    
+    
+    <div class="header">
     <div class="grid">
-        
-        <div class="column align-center c-start-4 c-end-10">
-            <h1 class="dark-purple">Discovery fase</h1>
+        <div class="column align-center c-start-4 c-span-6">
+            
+            
+            <div class="marker">
+                
+                    <img class="icon-48" src="/assets/icons/double-diamond-3-48.svg">
+                    <img class="icon-32" src="/assets/icons/double-diamond-3-32.svg">
+                
+            </div>
+            
             <div class="spacer-32"></div>
-            <p class="big grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu consequat sapien. Cras pretium convallis convallis. Aliquam feugiat velit sit amet mi tristique condimentum. Curabitur mollis finibus nibh vitae venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dignissim id purus eu volutpat.</p>
+            
+            <h1>
+                
+                    Ideation fase
+                
+            </h1>
             <div class="spacer-32"></div>
-            <div class="buttons">
-                <a class="button primary dark-purple" href="">Lezen dan!</a>
-                <a class="button secondary dark-purple" href="">Skip hoofdstuk</a>
+            
+            <h4>Hoofdstuk 
+                
+                    2
+                
+            </h4>
+            <div class="spacer-48"></div>
+            
+            <p class="big">
+                
+                    Na de Discovery fase gaan we over tot de Ideation fase. Hier gaan we aan de hand van de inzichten uit ons onderzoek een oplossing bedenken voor onze ontwerpvraag. Dit betekent dat we als groep gaan brainstormen aan de hand van creatieve technieken om zo veel ideeën te creëren! 
+                
+            </p>
+            <div class="spacer-48"></div>
+            <div class="button-up">
+                <a class="button primary" href="#concepting">Ontdek hoofdstuk</a>
+                
+                <a class="button secondary" href="#create">Skip naar volgende</a>
+                
             </div>
         </div>
     </div>
-</section>
-
-</section>
-
-
-<section id="">
+</div>
+    <div class="section" id="concepting">
     <div class="grid">
-        
-        <div class="column sticky c-start-2 c-end-6">
-            <img src="/assets/icons/dd-first.svg">
-            <h2 class="dark-purple">Onderzoek</h2>
-            <div class="spacer-32"></div>
-            <p class="grey">Wij hebben onderzoek gedaan door middel van deskresearch, interviews, enquêtes, onderzoek naar technische mogelijkheden, brand-research en onderzoek naar verschillende doelgroepen. Uit het onderzoek hebben we de belangrijkste inzichten gehaald, die hieronder beschreven staan.</p>
+        <div class="column c-start-2 c-span-4">
+            <h2>Concepting</h2>
         </div>
-
-        
-        <div class="card-grid c-start-6 c-end-11">
-            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
-            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
-            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
-            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
-            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
-            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
-            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
-            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
-            <div class="card"><p>Merendeels van de doelgroep leest op jaarbasis 1-3 boeken.</p></div>
+        <div class="column c-start-2 c-span-10">
+            <img src="/assets/images/concepting.svg">
         </div>
-    </div>
-</section>
-
-<section id="">
-    <div class="grid">
-        
-        <div class="column sticky c-start-2 c-end-6">
-            <img src="/assets/icons/dd-first.svg">
-            <h2 class="dark-purple">Ontwerpcriteria</h2>
-            <div class="spacer-32"></div>
-            <p class="grey">Voor ons ontwerp hebben we uiteraard een aantal ontwerp criteria om te voldoen aan de behoeftes van de stakeholders.</p>
+        <div class="column c-start-2 c-span-5">
+            <p>Nu al het onderzoek gedaan is en we bruikbare inzichten hebben, kunnen we gaan brainstormen! We zijn begonnen met ieder een aantal divergerende en convergerende technieken op te zoeken. Deze hebben we allemaal naast elkaar gezet en om te bepalen welke wij het beste konden gaan gebruiken hebben we "Dot voting" gedaan. Een techniek waarbij elk teamlid zijn top 3 aanvinkt. Zo hebben we gekozen voor de techniek "brainwriting" waarbij iedereen in de eerste ronde zijn ideeën opschrijft, waarop in de volgende ronde de volgende persoon verder gaat op de ideeën van de vorige persoon.</p>
         </div>
-
-        
-        <div class="column c-start-6 c-end-11">
-            <p>Finish ff die content dan!</p>
-            <iframe src="https://giphy.com/embed/EQIkgfMCjs1kk" width="480" height="208" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <div class="column c-start-7 c-span-5">
+            <p>We hebben in totaal 5 rondes gedaan en hieruit kwamen 117 ideeën! Om deze ideeën weer te convergeren hebben we de "COCD Box" techniek gebruikt, waar ze verdeeld worden in "gewone ideeën" of "originele ideeën" en "realiseerbaar" en "(nog) niet realiseerbaar". Zo konden we komen tot ongeveer 11 goede ideeën en om tot de 3 beste te komen, hebben we gestemd.</p>
         </div>
-    </div>
-</section>
-
-
-<section id="" class="white">
-    <div class="grid">
-        
-        <div class="column align-center c-start-4 c-end-10">
-            <div class="chapter-marker">
-                <img src="assets/icons/double-diamond-3.svg">
+        <div class="concept-cards c-start-2 c-span-10">
+            
+            <div class="card">
+                <div class="cover">
+                    <img src="/assets/images/concept-1.png">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <div class="marker">
+                            <p>1</p>
+                        </div>
+                        <h3>Mystery Solving 101</h3>
+                    </div>
+                    <p>Bij dit concept nemen we de lezer mee in het verhaal. We willen bij verschillende genre’s fysieke voorwerpen meeleveren die onderdeel zijn van het verhaal. Deze voorwerpen zitten in een doos met QR-codes die een interactie bieden met de lezer en tot nadenken zetten. Hierdoor wordt de lezer een onderdeel van het verhaal.</p>
+                </div>
             </div>
-            <h1 class="dark-purple">Ideation fase</h1>
-            <div class="spacer-16"></div>
-            <h4>Hoofdstuk 3</h4>
+            
+            <div class="card">
+                <div class="cover">
+                    <img src="/assets/images/concept-2.png">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <div class="marker">
+                            <p>2</p>
+                        </div>
+                        <h3>Literatuur Komt Tot Leven</h3>
+                    </div>
+                    <p>Dit concept neemt literatuur mee naar de buitenwereld. We willen op verschillende manieren literatuur (verhaal of gedichten) vormgeven op gebouwen en huizen door een stad. Hierdoor kan de lezer het verhaal volgen in een zoektocht, maar ook de stad leren kennen.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="cover">
+                    <img src="/assets/images/concept-3.png">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <div class="marker">
+                            <p>3</p>
+                        </div>
+                        <h3>The Sound of Literature</h3>
+                    </div>
+                    <p>Bij dit prototype ligt de nadruk op de audio combinatie met literatuur. Bij het kiezen van een boek zal de mogelijkheid toe worden gevoegd om audio af te spelen tijdens het lezen. Deze optie is links boven te vinden. De muziek zal afgesteld zijn op de emoties binnen die pagina. Dit zal zo de algehele ervaring verbeteren en een extra ervaring voor de zintuigen leveren.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <div class="section">
+    <div class="grid">
+        <div class="column align-center c-start-4 c-span-6">
+            <h2>Kill your darling</h2>
             <div class="spacer-64"></div>
-            <p class="big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu consequat sapien. Cras pretium convallis convallis. Aliquam feugiat velit sit amet mi tristique condimentum. Curabitur mollis finibus nibh vitae venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dignissim id purus eu volutpat.</p>
+            <p class="big grey">Om van deze 3 concepten weer tot 1 final concept te komen hebben interviews gehouden met de doelgroep en de opdrachtgever om feedback te verzamelen. We hebben ook gekeken hoe inclusive de drie concepten waren en in hoeverre ze aansluiten bij de ontwerp criteria. Hier kwamen we tot de conclusie dat alle concepten goede elementen bevatten en hebben dus gekozen om deze samen te voegen tot 1 concept zodat deze het beste aansluit op de behoeften van de stakeholders. </p>
         </div>
     </div>
-</section>
+</div>
+</div>
 
-
-<section id="" class="white">
-    <div class="grid">
-        
-        <div class="column c-start-2 c-end-6">
-            <h2 class="dark-purple">Criteria</h2>
-        </div>
-        <div class="column c-start-6 c-end-12">
-            <p class="big grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu consequat sapien. Cras pretium convallis convallis. Aliquam feugiat velit sit amet mi tristique condimentum. Curabitur mollis finibus nibh vitae venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dignissim id purus eu volutpat.</p>
-        </div>
-
-        <div class="grid-criteria c-start-2 c-end-12">
-            
-            <div class="card">
-                <div class="marker"><p>1</p></div>
-                <div class="text">
-                    <h3>[Criteria 1]</h3>
-                    <p>Het project laat zien dat er ook buiten exposities, festivals en musea een markt is voor producten op het snijvlak van digitale literatuur en media.</p>
-                </div>
+<!-- CHAPTER: BOOKBITE -->
+<div class="chapter" id="chapter-bookbite">
+    <div class="section">
+        <div class="grid">
+            <div class="column align-center c-start-4 c-span-6">
+                <h3>Maak kennis met...</h3>
+                <img class="logo" src="/assets/logos/bookbite-white.svg">
             </div>
-
-            
-            <div class="card">
-                <div class="marker"><p>2</p></div>
-                <div class="text">
-                    <h3>[Criteria 2]</h3>
-                    <p>Het project laat zien dat er ook buiten exposities, festivals en musea een markt is voor producten op het snijvlak van digitale literatuur en media.</p>
-                </div>
-            </div>
-
-            
-            <div class="card">
-                <div class="marker"><p>3</p></div>
-                <div class="text">
-                    <h3>[Criteria 3]</h3>
-                    <p>Het project laat zien dat er ook buiten exposities, festivals en musea een markt is voor producten op het snijvlak van digitale literatuur en media.</p>
-                </div>
-            </div>
-
-            
-            <div class="card">
-                <div class="marker"><p>4</p></div>
-                <div class="text">
-                    <h3>[Criteria 4]</h3>
-                    <p>Het project laat zien dat er ook buiten exposities, festivals en musea een markt is voor producten op het snijvlak van digitale literatuur en media.</p>
-                </div>
+            <div class="video-container c-start-3 c-span-8">
+                <iframe src="https://www.youtube.com/embed/7k9PODA3IFU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-</section>
+    <div class="section">
+        <div class="grid">
+            <div class="showcase-gallery c-start-2 c-span-4">
+                <img src="/assets/images/showcase-home.png">
+                <img src="/assets/images/showcase-reading.png">
+            </div>
+            <div class="column c-start-6 c-span-6">
+                <h2>Wat is Bookbite?</h2>
+                <div class="spacer-32"></div>
+                <p class="big">Bookbite is een (web) applicatie waar jongeren een persoonlijk profiel kunnen opstellen waarin hun interesses, behoeftes, voorkeuren en wensen, wat betreft literatuur en het ervaren ervan, duidelijk worden.</p>
+                <p>Aan de hand van dit profiel zal de app aanbevelingen doen over welke boeken dan bij jou passen. In de app is het dan ook mogelijk om deze aanbevolen boeken te lezen. Aan de hand van het profiel zal er dan ook een persoonlijke ervaring worden gecreëerd door het gebruik van muziek (waar de focus gestimuleerd kan worden) en visuele ondersteuningen.</p>
+                <div class="spacer-32"></div>
+                <p>Benieuwd hoe het is geworden?</p>
+                <a class="button primary" target="_blank" href="https://bookbite.netlify.app/">Probeer het zelf!</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-<section id="">
+<!-- CHAPTER: CREATE -->
+<div class="chapter" id="create">
+    
+    
+    
+    <div class="header">
     <div class="grid">
-        
-        <div class="column align-center c-start-4 c-end-10">
-            <h3 class="light-purple">Maak kennis met...</h3>
-            <div class="spacer-16"></div>
-            <h1 class="dark-purple">Bookbite</h1>
+        <div class="column align-center c-start-4 c-span-6">
+            
+            
+            <div class="marker">
+                
+                    <img class="icon-48" src="/assets/icons/double-diamond-4-48.svg">
+                    <img class="icon-32" src="/assets/icons/double-diamond-4-32.svg">
+                
+            </div>
+            
             <div class="spacer-32"></div>
-            <p class="big grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu consequat sapien. Cras pretium convallis convallis. Aliquam feugiat velit sit amet mi tristique condimentum. Curabitur mollis finibus nibh vitae venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dignissim id purus eu volutpat.</p>
-        </div>
-
-        
-        <div class="video-container c-start-3 c-end-11">
-            <iframe src="https://www.youtube.com/embed/7xFH1fUhhLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
-
-
-<section id="" class="dark-purple">
-    <div class="grid">
-        
-        <div class="column align-center c-start-4 c-end-10">
-            <h1 class="light">Met dank aan</h1>
+            
+            <h1>
+                
+                    Creation fase
+                
+            </h1>
             <div class="spacer-32"></div>
-            <p class="big light"><a href="" class="big light">Bruce Moerdjiman</a>, <a href="" class="big light">Jasper Schelling</a>, <a href="" class="big light">Marianne Hermans</a>, <a href="" class="big light">Dionne van Dijk</a></p>
+            
+            <h4>Hoofdstuk 
+                
+                    3
+                
+            </h4>
+            <div class="spacer-48"></div>
+            
+            <p class="big">
+                
+                    Tijdens de Ideation fase zijn we tot een aantal concepten gekomen, deze hebben we verwerkt tot 1 concept, welke het beste aansluit op ons onderzoek. Nu is het dus tijd voor de Creation fase, waar we dit concept gaan realiseren met een prototype! Hier gaan we dus alles wat we nodig hebben voor een goed product uitwerken, om ook deze weer te testen bij onze stakeholders.
+                
+            </p>
+            <div class="spacer-48"></div>
+            <div class="button-up">
+                <a class="button primary" href="#job-stories">Ontdek hoofdstuk</a>
+                
+                <a class="button secondary" href="#closing">Skip naar volgende</a>
+                
+            </div>
         </div>
     </div>
-</section>
-
-
-<footer id="footer">
+</div>
+    <div class="section" id="job-stories">
     <div class="grid">
-        <div class="column c-start-2 c-end-6">
-            <h1 class="light">Groetjes!</h1>
-            <div class="spacer-16"></div>
-            <p class="light">— Team Silverpoint</p>
+        <div class="column c-start-2 c-span-4">
+            <h2>Job stories</h2>
         </div>
-        <div class="column c-start-6 c-end-12"></div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey big">Voor het maken van de wireframes en het prototype hebben we jobstories opgesteld. Ze zijn bedoeld om vast te stellen welke functionaliteiten er in het product horen te zitten. Zo komen we tot een gebruiksvriendelijk eindproduct.</p>
+            <p class="grey">Deze job stories zijn gebaseerd op het artikel <a class="grey" target="_blank" href="https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27">Replacing The User Story With The Job Story</a> en gefiltered op de meest essentiele functies voor het MVP (Minimal Viable Product). Mocht je ze allemaal willen lezen, check dan onze <a class="grey" target="_blank" href="https://www.notion.so/elwindewitte/c10a2033a0dc49e8958331ac06a69028?v=92212de289be4c24ba5bada468872078">Notion pagina</a>.</p>
+        </div>
+        <div class="job-story-cards c-start-2 c-span-10">
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-page-facing-up"></i>
+                    <p>Menu</p>
+                </div>
+                <div class="job-story">
+                    <p>When I&#39;m on any page, I want to be able to navigate through the product, so I can find the new page I&#39;m looking for.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-magnifying-glass-tilted-right"></i>
+                    <p>Search books</p>
+                </div>
+                <div class="job-story">
+                    <p>When I&#39;m looking for a new book to read, I want to search for it, so I can find it quickly and easily.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-gear"></i>
+                    <p>Audio settings</p>
+                </div>
+                <div class="job-story">
+                    <p>When the book has audio, I want to be able to turn it on and off, so I can have control over when I want to use audio while I read.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-house"></i>
+                    <p>Home page</p>
+                </div>
+                <div class="job-story">
+                    <p>When I am using the product, I want to have a page where I can go back to every time, so I can find my way through the product.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-sparkles"></i>
+                    <p>Visuals in background</p>
+                </div>
+                <div class="job-story">
+                    <p>When I read a book with visuals in the background, I want to be able to see the text clearly, so I can read properly and not be disctracted.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-gear"></i>
+                    <p>Audio type</p>
+                </div>
+                <div class="job-story">
+                    <p>When the book has audio, I want to be able to choose the type of audio, so I can choose an audio that is suited for me when i read.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-musical-score"></i>
+                    <p>Audio type</p>
+                </div>
+                <div class="job-story">
+                    <p>When the book has audio, I want to have it not be distracting, so I can concentrate on the story.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-floppy-disk"></i>
+                    <p>Privacy settings</p>
+                </div>
+                <div class="job-story">
+                    <p>When I&#39;m not satisfied with the way the product uses my data, I want to change them, so I can feel safe using the product.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            
+        </div>
     </div>
-</footer>
+</div>
+    <div class="section">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Wireframes</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey big">Om de functionaliteiten van ons product voor ogen te zien en te kunnen testen hebben we wireframes opgesteld, ook als basis voor ons prototype. Aan de hand van onze jobstories hebben we bepaald welke functionaliteiten de app hoort te hebben en deze zijn in de wireframes verwerkt. Belangrijke keuzes hierin zijn: de navigatiebalk onderin het scherm, de zoekfunctie (op genre, auteur, titel) en een aantal belangrijke instellingen. </p>
+        </div>
+        <div class="wireframe-gallery c-start-2 c-span-10">
+            <img class="wireframe" src="/assets/images/wireframe-home.jpg">
+            <img class="wireframe" src="/assets/images/wireframe-search.jpg">
+            <img class="wireframe" src="/assets/images/wireframe-search-results.jpg">
+            <img class="wireframe" src="/assets/images/wireframe-search-categories.jpg">
+            <img class="wireframe" src="/assets/images/wireframe-book-detail.jpg">
+            <img class="wireframe" src="/assets/images/wireframe-book-reading.jpg">
+        </div>
+    </div>
+</div>
+    <div class="section light" id="styleguide">
+    <div class="grid">
+        
+        <div class="column c-start-2 c-span-10" id="toggleContainer" onclick="toggleLightDark()">
+            <div class="toggle-wrapper">
+                <h4 id="textLightMode">Light mode</h4>
+                <div class="toggle"><div class="dot"></div></div>
+                <h4 id="textDarkMode">Dark mode</h4>
+            </div>
+        </div>
+
+        
+        <div class="logo-wrapper">
+            <h4>Logo's</h4>
+            <div class="logo-cards">
+                <div class="card" id="assetLogo">
+                    <img src="/assets/logos/bookbite-logo-light.svg">
+                    <p class="description">Logo</p>
+                </div>
+                <div class="card" id="assetWordmark">
+                    <img src="/assets/logos/bookbite-wordmark-light.svg">
+                    <p class="description">Wordmark</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="color-wrapper">
+            <h4>Kleurstijlen</h4>
+            <div class="color-cards">
+                <div class="card">
+                    <div class="color primary"></div>
+                    <p class="description">Primary</p>
+                </div>
+                <div class="card">
+                    <div class="color secondary"></div>
+                    <p class="description">Secondary</p>
+                </div>
+                <div class="card">
+                    <div class="color background"></div>
+                    <p class="description">Background</p>
+                </div>
+                <div class="card">
+                    <div class="color white"></div>
+                    <p class="description">Light</p>
+                </div>
+                <div class="card">
+                    <div class="color black"></div>
+                    <p class="description">Dark</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="font-cards">
+            <h4>Tekststijlen</h4>
+            <div class="card">
+                <p class="font lora">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+                <p class="description">Lora Medium Roman • Headers (origineel)</p>
+            </div>
+            <div class="card">
+                <p class="font epilogue-bold">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+                <p class="description">Epilogue Bold • Headers (aangepast)</p>
+            </div>
+            <div class="card">
+                <p class="font epilogue-reg">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+                <p class="description">Epilogue Regular • Body</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="section">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Prototyping</h2>
+            <div class="spacer-48"></div>
+            <p class="big grey">Het prototype hebben we in eerste instantie gemaakt met Figma, maar na de eerste user tests merkte we al dat we de verfijning miste om mensen echt op te nemen in een effectieve user test.</p>
+            <p class="grey">Daarom kozen we ervoor om te gaan werken met <a class="grey" href="">Eleventy</a>, een static site generator waarmee we ons prototype echt konden coderen. We hebben hiervoor gekozen aangezien je met Eleventy ook data kunt hangen aan de pagina's die je maakt. Zo kun je nu makkelijk boeken toevoegen aan het prototype, of schrijvers. Op deze manier is het schaalbaar en konden we makkelijk de content aanpassen voor de user tests. Daarnaast is dit ook een manier waarmee de <a class="grey" href="">Koninklijke Bibliotheek</a> tot op een zekere hoogte makkelijk zelf aan de slag kan.</p>
+            <div class="spacer-32"></div>
+            <div class="button-up">
+                <a class="button primary" target="_blank" href="https://bookbite.netlify.app/">Test het prototype zelf</a>
+                <a class="button secondary" target="_blank" href="https://github.com/elwindewitte/bookbite-app">Check code op Github</a>
+            </div>
+        </div>
+        <div class="code-container c-start-6 c-span-6">
+            <img src="/assets/images/prototype.png">
+        </div>
+    </div>
+</div>
+    <div class="section">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Testen</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey big">Uiteraard is het ook belangrijk om de functionaliteiten te testen bij de gebruiker. We hebben een usability test gehouden met 6 gebruikers. Hier hebben we de gebruiker een aantal acties uit te voeren door het prototype heen, om te kijken of de functie en de weergave duidelijk is voor de gebruiker. </p>
+            <p class="grey">Ook hebben we achteraf een aantal vragen gesteld om achter hun meningen en ervaringen te komen van het concept. Hier zijn een aantal quotes uitgekomen om nog te verwerken.</p>
+        </div>
+        <div class="review-cards c-start-2 c-span-10">
+            
+            <div class="card">
+                <i class="twa twa-2x twa-musical-notes"></i>
+                <div class="review">
+                    <p class="big">Goede muziek die aansluit op genres werkt het beste."</p>
+                    
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="twa twa-2x twa-new-moon"></i>
+                <div class="review">
+                    <p class="big">Het thema is te donker. Mogelijk een day time modus."</p>
+                    
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="twa twa-2x twa-train"></i>
+                <div class="review">
+                    <p class="big">Mogelijk een optie om boeken te downloaden, zodat ik ze onderweg kan lezen."</p>
+                    
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="twa twa-2x twa-ear"></i>
+                <div class="review">
+                    <p class="big">Schrok in de eerste instantie van de audio. Mogelijk later aanzetten of faden."</p>
+                    
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="twa twa-2x twa-automobile"></i>
+                <div class="review">
+                    <p class="big">Ik zou dit zeker voor onderweg gebruiken."</p>
+                    
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="twa twa-2x twa-telescope"></i>
+                <div class="review">
+                    <p class="big">Overzichtelijk."</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    
+</div>
+
+<!-- CHAPTER: CLOSING -->
+<div class="chapter light-purple" id="closing">
+    
+    
+    <div class="header">
+    <div class="grid">
+        <div class="column align-center c-start-4 c-span-6">
+            
+            
+            
+            <div class="spacer-32"></div>
+            
+            <h1>
+                
+                    Overdragen
+                
+            </h1>
+            <div class="spacer-32"></div>
+            
+            <h4>Hoofdstuk 
+                
+                    4
+                
+            </h4>
+            <div class="spacer-48"></div>
+            
+            <p class="big">
+                
+                    Ter afronding van ons project willen wij de <a class="big" target="_blank" href="https://www.kb.nl/">Koninklijke Bibliotheek</a> graag zo veel mogelijk handvaten bieden om verder met het product te gaan. Daarom in dit hoofdstuk een aantal essentiele bronnen om hierbij te helpen.
+                
+            </p>
+            <div class="spacer-48"></div>
+            <div class="button-up">
+                <a class="button primary" href="#recommendations">Ontdek hoofdstuk</a>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="section" id="recommendations">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Aanbevelingen</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="big">Uit de user test en de gesprekken met onze opdrachtgever (Marianne) zijn een aantal belangrijke punten gekomen die nog aangepakt moeten worden wanneer dit product wordt voortgezet. We hebben ze gefilterd en de meest essentiele gepakt om hier te delen.</p>
+        </div>
+        <div class="recommendation-cards c-start-2 c-span-10">
+            
+            <div class="card">
+                <div class="checkbox"></div>
+                <div class="content">
+                    <h4>Cross-platform</h4>
+                    <p>Het product kan nog uitgebreid worden naar zowel tablet, als desktop. Aan te raden hiervoor React of Electron te gebruiken.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="checkbox"></div>
+                <div class="content">
+                    <h4>User generated content</h4>
+                    <p>Een extra social aspect aan het product, zou het maken en delen van eigen visualisaties, muziek, en sound effects kunnen zijn.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="checkbox"></div>
+                <div class="content">
+                    <h4>Light mode</h4>
+                    <p>Onze testpersonen hebben aangegeven ook graag een light mode te hebben. Verder zouden ze voor het lezen en de app zelf individeel willen kiezen voor licht of donker.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="checkbox"></div>
+                <div class="content">
+                    <h4>Verbeteringen leeservaring</h4>
+                    <p>De leeservaring is te verbeteren door de soundtrack lanzaam in te laten faden, pagina&#39;s te gebruiken ipv scrollen, maar vooral ook berichten te blokken voor de extra concentratie.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="checkbox"></div>
+                <div class="content">
+                    <h4>Verbeteringen privacy</h4>
+                    <p>Gebruikers meer de mogelijkheid geven hun eigen data en privacy aan te passen. Optie tussen data- en/of verwijderen bijvoorbeeld.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="checkbox"></div>
+                <div class="content">
+                    <h4>Andere leesvormen</h4>
+                    <p>Ook de mogelijkheid bieden tot luisterboeken. Misschien zelf de gebruikers hun eigen luisterboeken laten maken.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    
+    
+    <div class="section dark-purple align-center" id="credit">
+    <div class="grid">
+        <div class="column c-start-3 c-span-8">
+            <h2>Met dank aan</h2>
+            <div class="spacer-64"></div>
+            <p class="big">Om ons project successvol af te sluiten, konden we absoluut niet zonder deze geweldige mensen en tools, die willen we bij deze enorm bedanken! We hebben op jullie kunnen vertrouwen voor feedback, hulp, en begeleiding, wat allemaal heeft bijgedragen aan een geweldige tijd voor ons allen! <i class="twa twa-folded-hands"></i></p>
+        </div>
+        <div class="credit-cards c-start-3 c-span-8">
+            
+            <div class="card">
+                <div class="entity">
+                    <a target="_blank" href="https://www.hogeschoolrotterdam.nl/">Hogeschool Rotterdam</a>
+                </div>
+                <div class="people">
+                    <p><i class="twa twa-person-surfing"></i> Bruce Moerdjiman</p>
+                    <p><i class="twa twa-baby"></i> Jasper Schelling</p>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="entity">
+                    <a target="_blank" href="https://www.kb.nl/">Koninklijke Bibliotheek</a>
+                </div>
+                <div class="people">
+                    <p>Marianne Hermans</p>
+                    <p>Ted van der Togt</p>
+                    <p>Thomas Haighton</p>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="entity">
+                    <p>Onze lieve testpersonen</p>
+                </div>
+                <div class="people">
+                    <p><i class="twa twa-cowboy-hat-face"></i> Chanouk</p>
+                    <p><i class="twa twa-blossom"></i> Vera</p>
+                    <p><i class="twa twa-cat-face"></i> Sulisa</p>
+                    <p><i class="twa twa-butterfly"></i> Yasemin</p>
+                    <p><i class="twa twa-face-with-steam-from-nose"></i> Tycho</p>
+                    <p><i class="twa twa-newspaper"></i> Thomas</p>
+                    <p><i class="twa twa-helicopter"></i> Reinout</p>
+                    <p><i class="twa twa-rocket"></i> Lars</p>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="entity">
+                    <p>Onze geweldige tools</p>
+                </div>
+                <div class="people">
+                    <a target="_blank" href="https://www.figma.com/"><i class="twa twa-artist-palette"></i> Figma</a>
+                    <a target="_blank" href="hhttps://www.notion.so/"><i class="twa twa-memo"></i> Notion</a>
+                    <a target="_blank" href="https://miro.com/"><i class="twa twa-brain"></i> Miro</a>
+                    <a target="_blank" href="https://lookback.io/"><i class="twa twa-magnifying-glass-tilted-right"></i> Lookback</a>
+                    <a target="_blank" href="https://github.com/"><i class="twa twa-floppy-disk"></i> Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer" id="footer">
+    <div class="column c-start-2 c-span-4">
+        <h2>Dat was m</h2>
+        <div class="spacer-32"></div>
+        <p>We hopen dat je genoten hebt van onze case study. Mocht je nog suggesties, feedback, of opmerkingen hebben...</p>
+        <div class="spacer-16"></div>
+        <a class="button primary" target="_blank" href="https://t.me/elwindewitte">Laat het ons weten</a>
+    </div>
+    <div class="team-grid c-start-6 c-span-6">
+        <h3>Het team</h3>
+        
+        <div class="teammember">
+            <img src="/assets/images/wessel-van-berkel.jpg">
+            <div class="content">
+                <h4>Wessel van Berkel</h4>
+                <p>User Research and Testing</p>
+            </div>
+        </div>
+        
+        <div class="teammember">
+            <img src="/assets/images/ashana-ainul.jpg">
+            <div class="content">
+                <h4>Ashana Ainul</h4>
+                <p>Visual Design</p>
+            </div>
+        </div>
+        
+        <div class="teammember">
+            <img src="/assets/images/lisa-luijendijk.jpg">
+            <div class="content">
+                <h4>Lisa Luijendijk</h4>
+                <p>Visual Design</p>
+            </div>
+        </div>
+        
+        <div class="teammember">
+            <img src="/assets/images/gabriella-viola.jpg">
+            <div class="content">
+                <h4>Gabriella Viola</h4>
+                <p>Interaction Design</p>
+            </div>
+        </div>
+        
+        <div class="teammember">
+            <img src="/assets/images/elwin-de-witte.jpg">
+            <div class="content">
+                <h4>Elwin de Witte</h4>
+                <p>Prototyping and Technology</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
     </body>
 </html>

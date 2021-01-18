@@ -1,0 +1,279 @@
+/* These breakpoints are from Webflow */
+
+/* TABLET LANDSCAPE ======================================== */
+
+@media only screen and (max-width: 1184px) {
+
+    /* TEXT ======== */
+    h1 {
+        font-size: 64px;
+        line-height: 72px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    #header h1 {
+        font-size: 64px !important;
+        line-height: 80px !important;
+        margin-bottom: 96px !important;
+    }
+
+    #header p.big {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #footer {
+        grid-template-columns: 1fr !important;
+        column-gap: 0;
+    }
+
+    #footer .column, #footer .team-grid {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+
+
+
+    /* COLUMNS ======== */
+    .grid {column-gap: 48px;}
+
+    .c-start-4 {grid-column-start: 3}
+    .c-start-4.c-span-6 {grid-column-end: 11}
+    .c-start-2 {grid-column-start: 1}
+    .c-start-2.c-span-10 {grid-column-end: 13}
+    .c-start-6.c-span-6 {grid-column-end: 13}
+    .c-start-7.c-span-5 {grid-column-end: 13}
+    .c-start-3 {grid-column-start: 2;}
+    .c-start-3.c-span-8 {grid-column-end: 12;}
+    .c-start-2.c-span-6 {grid-column-end: 5;}
+    .c-start-8.c-span-4 {grid-column-start: 5; grid-column-end: 13;}
+
+
+
+
+    /* CUSTOM GRIDS ======== */
+    .research-cards {grid-template-columns: 1fr 1fr !important; column-gap: 24px !important; row-gap: 24px !important;}
+    .criteria-cards {column-gap: 24px !important; row-gap: 24px !important;;}
+    .concept-cards {grid-template-columns: 1fr 1fr !important;}
+    .review-cards {grid-template-columns: 1fr 1fr !important; column-gap: 24px !important; row-gap: 24px !important;}
+    .job-story-cards .card {grid-template-columns: 1fr 2fr 1fr !important;}
+    .wireframe-gallery {column-gap: 32px !important; row-gap: 32px !important;}
+    .recommendation-cards {grid-template-columns: 1fr 1fr !important;}
+    #styleguide .logo-cards {grid-template-columns: 1fr !important;}
+    #styleguide .color-cards {grid-template-columns: 1fr 1fr 1fr !important;}
+    #styleguide .logo-wrapper, #styleguide .color-wrapper {grid-column-start: 1;}
+    #styleguide .font-cards {grid-column-end: 13;}
+
+
+
+    .chapter#chapter-bookbite .logo {height: 64px}
+
+    .criteria-cards .marker {padding: 12px !important;}
+    .criteria-cards .marker p {font-size: 16px !important; width: 24px !important; line-height: 24px !important;}
+}
+
+
+
+
+
+
+
+
+/* TABLET PORTRAIT ======================================== */
+
+@media only screen and (max-width: 768px) {
+
+    /* TEXT ======== */
+    h1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    a.big, p.big {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+
+    .showcase-gallery img {
+        transform: translate(0, 0) !important;
+    }
+
+    #header {
+        padding: 192px 48px;
+    }
+
+    #header .grid {
+        row-gap: 0;
+    }
+
+    #footer {
+        padding: 192px 48px;
+    }
+
+    #footer .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #footer .team-grid h3 {
+        grid-column-end: 2;
+    }
+
+
+
+
+
+    /* NAVIGATION ======== */
+    .navigation .marketing h1 {display: none}
+    .navigation .marketing .divider {display: none}
+
+
+
+
+    /* COLUMNS ======== */
+    .chapter {padding: 192px 0; row-gap: 192px;}
+    .section {padding: 0 48px;}
+    .chapter#chapter-bookbite {margin: 0; border-radius: 0;}
+    .chapter#chapter-bookbite .logo {height: 48px}
+    .chapter#chapter-bookbite h3 {font-size: 16px; line-height: 24px;}
+    .grid {column-gap: 32px; row-gap: 48px;}
+    .c-start-4 {grid-column-start: 2}
+    .c-start-4.c-span-6 {grid-column-end: 12}
+    .c-start-2.c-span-4 {grid-column-end: 13}
+    .c-start-6 {grid-column-start: 1}
+    .c-start-7 {grid-column-start: 1;}
+    .c-start-7.c-span-5 {grid-column-end: 13;}
+    .c-start-2.c-span-5 {grid-column-end: 13;}
+    .c-start-3 {grid-column-start: 1;}
+    .c-start-3.c-span-8 {grid-column-end: 13;}
+    .c-start-2.c-span-6 {grid-column-start: 1; grid-column-end: 13;}
+    .c-start-8.c-span-4 {grid-column-start: 1; grid-column-end: 13;}
+
+
+
+
+    /* CUSTOM GRIDS ======== */
+    .research-cards {grid-template-columns: 1fr !important; column-gap: 16px !important; row-gap: 16px !important;}
+    .criteria-cards {grid-template-columns: 1fr !important; column-gap: 16px !important; row-gap: 16px !important;}
+    .concept-cards {grid-template-columns: 1fr !important; column-gap: 24px !important; row-gap: 24px !important;}  
+    .wireframe-gallery {grid-template-columns: 1fr 1fr !important; column-gap: 24px !important; row-gap: 24px !important;}
+    .review-cards {grid-template-columns: 1fr !important; column-gap: 16px !important; row-gap: 16px !important;}
+    .recommendation-cards {grid-template-columns: 1fr !important; column-gap: 16px !important; row-gap: 16px !important;}
+    .credit-cards .card {grid-template-columns: 1fr !important;}
+    /* JOB STORIES */
+    .job-story-cards .card {grid-template-columns: 1fr !important;}
+    .job-story-cards .job-story {padding:0 16px 8px 16px !important;}
+    .job-story-cards .tag-container {align-items: flex-start !important;}
+    /* STYLEGUIDE */
+    #styleguide .grid {grid-template-rows: auto auto auto auto;}
+    #styleguide .logo-wrapper, #styleguide .color-wrapper, #styleguide .font-cards {grid-column-start: 1; grid-column-end: 13;}
+    #styleguide .logo-wrapper {grid-row-start: 2; grid-row-end: 3;}
+    #styleguide .color-wrapper {grid-row-start: 3; grid-row-end: 4;}
+    #styleguide .font-cards {grid-row-start: 4; grid-row-end: 5;}
+}
+
+
+
+
+
+
+
+/* MOBILE LANDSCAPE ======================================== */
+
+@media only screen and (max-width: 568px) {
+    
+    /* TEXT ======== */
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    #header {
+        padding: 192px 24px 128px 24px;
+    }
+
+    #header h1 {
+        font-size: 48px !important;
+        line-height: 64px !important;
+        margin-bottom: 64px !important;
+    }
+
+    #footer {
+        padding: 128px 24px;
+    }
+
+
+
+    .navigation {
+        padding: 16px;
+    }
+
+    .navigation .list {
+        grid-template-columns: auto auto;
+    }
+
+    .navigation .mobile {
+        display: inline;
+    }
+
+    .navigation #menu-trigger {
+        display: flex !important;
+    }
+
+    .navigation .desktop {
+        display: none;
+    }
+
+    .chapter .header .icon-48 {
+        display: none;
+    } 
+    .chapter .header .icon-32 {
+        display: inline;
+    }
+    .chapter {padding: 128px 0; row-gap: 128px;}
+    .section {padding: 0 24px;}
+    #styleguide {padding-top: 128px; padding-bottom: 128px;}
+    .grid {column-gap: 16px; row-gap: 32px;}
+    .column.align-center {
+        text-align: left !important;
+        align-items: start;
+    }
+    .c-start-4 {grid-column-start: 1}
+    .c-start-4.c-span-6 {grid-column-end: 13}
+    .criteria-cards .card {grid-template-columns: 1fr !important;}
+    .criteria-cards .marker {display: none !important;}
+    .wireframe-gallery {column-gap: 16px !important; row-gap: 16px !important;}
+    .concept-cards {column-gap: 16px !important; row-gap: 16px !important;}
+    .concept-cards .marker {display: none !important;}
+    .concept-cards .content {row-gap: 8px !important;}
+}
+
+
+
+
+
+
+
+
+/* MOBILE PORTRAIT ======================================== */
+
+@media only screen and (max-width: 320px) {
+    .grid {column-gap: 0;}
+    #header, #footer, .section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #styleguide .color-cards {grid-template-columns: 1fr 1fr !important;}
+}

@@ -1,0 +1,34 @@
+<div class="section" id="concepting">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Concepting</h2>
+        </div>
+        <div class="column c-start-2 c-span-10">
+            <img src="{{ '/' | url }}assets/images/concepting.svg">
+        </div>
+        <div class="column c-start-2 c-span-5">
+            <p>Nu al het onderzoek gedaan is en we bruikbare inzichten hebben, kunnen we gaan brainstormen! We zijn begonnen met ieder een aantal divergerende en convergerende technieken op te zoeken. Deze hebben we allemaal naast elkaar gezet en om te bepalen welke wij het beste konden gaan gebruiken hebben we "Dot voting" gedaan. Een techniek waarbij elk teamlid zijn top 3 aanvinkt. Zo hebben we gekozen voor de techniek "brainwriting" waarbij iedereen in de eerste ronde zijn ideeën opschrijft, waarop in de volgende ronde de volgende persoon verder gaat op de ideeën van de vorige persoon.</p>
+        </div>
+        <div class="column c-start-7 c-span-5">
+            <p>We hebben in totaal 5 rondes gedaan en hieruit kwamen 117 ideeën! Om deze ideeën weer te convergeren hebben we de "COCD Box" techniek gebruikt, waar ze verdeeld worden in "gewone ideeën" of "originele ideeën" en "realiseerbaar" en "(nog) niet realiseerbaar". Zo konden we komen tot ongeveer 11 goede ideeën en om tot de 3 beste te komen, hebben we gestemd.</p>
+        </div>
+        <div class="concept-cards c-start-2 c-span-10">
+            {% for concept in collections.concept %}
+            <div class="card">
+                <div class="cover">
+                    <img src="{{ '/' | url }}assets/images/{{ concept.data.cover }}">
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <div class="marker">
+                            <p>{{ concept.data.number }}</p>
+                        </div>
+                        <h3>{{ concept.data.name }}</h3>
+                    </div>
+                    <p>{{ concept.data.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

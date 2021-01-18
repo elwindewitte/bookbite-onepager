@@ -1,0 +1,23 @@
+<div class="section">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Criteria</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey big">Voor ons ontwerp hebben we uiteraard een aantal ontwerp criteria opgesteld om te voldoen aan de behoeftes van de stakeholders.</p>
+        </div>
+        <div class="criteria-cards c-start-2 c-span-10">
+            {% for criteria in collections.criteria %}
+            <div class="card">
+                <div class="marker">
+                    <p>{{ criteria.data.number }}</p>
+                </div>
+                <div class="text">
+                    <h3>{{ criteria.data.name }}</h3>
+                    <p>{{ criteria.data.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

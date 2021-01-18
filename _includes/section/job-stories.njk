@@ -1,0 +1,27 @@
+<div class="section" id="job-stories">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Job stories</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="grey big">Voor het maken van de wireframes en het prototype hebben we jobstories opgesteld. Ze zijn bedoeld om vast te stellen welke functionaliteiten er in het product horen te zitten. Zo komen we tot een gebruiksvriendelijk eindproduct.</p>
+            <p class="grey">Deze job stories zijn gebaseerd op het artikel <a class="grey" target="_blank" href="https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27">Replacing The User Story With The Job Story</a> en gefiltered op de meest essentiele functies voor het MVP (Minimal Viable Product). Mocht je ze allemaal willen lezen, check dan onze <a class="grey" target="_blank" href="https://www.notion.so/elwindewitte/c10a2033a0dc49e8958331ac06a69028?v=92212de289be4c24ba5bada468872078">Notion pagina</a>.</p>
+        </div>
+        <div class="job-story-cards c-start-2 c-span-10">
+            {% for jobStory in collections.jobStory %}
+            <div class="card">
+                <div class="name">
+                    <i class="twa twa-{{ jobStory.data.emoji }}"></i>
+                    <p>{{ jobStory.data.name }}</p>
+                </div>
+                <div class="job-story">
+                    <p>When {{ jobStory.data.when }}, I want to {{ jobStory.data.iWantTo }}, so I can {{ jobStory.data.soICan }}.</p>
+                </div>
+                <div class="tag-container">
+                    <div class="tag must-have">Must have</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

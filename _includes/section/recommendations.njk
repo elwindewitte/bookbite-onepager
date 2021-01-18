@@ -1,0 +1,21 @@
+<div class="section" id="recommendations">
+    <div class="grid">
+        <div class="column c-start-2 c-span-4">
+            <h2>Aanbevelingen</h2>
+        </div>
+        <div class="column c-start-6 c-span-6">
+            <p class="big">Uit de user test en de gesprekken met onze opdrachtgever (Marianne) zijn een aantal belangrijke punten gekomen die nog aangepakt moeten worden wanneer dit product wordt voortgezet. We hebben ze gefilterd en de meest essentiele gepakt om hier te delen.</p>
+        </div>
+        <div class="recommendation-cards c-start-2 c-span-10">
+            {% for recommendation in collections.recommendation %}
+            <div class="card">
+                <div class="checkbox"></div>
+                <div class="content">
+                    <h4>{{ recommendation.data.name }}</h4>
+                    <p>{{ recommendation.data.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
