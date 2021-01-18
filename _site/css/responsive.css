@@ -140,6 +140,7 @@
     /* COLUMNS ======== */
     .chapter {padding: 192px 0; row-gap: 192px;}
     .section {padding: 0 48px;}
+    .chapter .header {padding: 0 48px;}
     .chapter#chapter-bookbite {margin: 0; border-radius: 0;}
     .chapter#chapter-bookbite .logo {height: 48px}
     .chapter#chapter-bookbite h3 {font-size: 16px; line-height: 24px;}
@@ -243,6 +244,7 @@
     }
     .chapter {padding: 128px 0; row-gap: 128px;}
     .section {padding: 0 24px;}
+    .chapter .header {padding: 0 24px;}
     #styleguide {padding-top: 128px; padding-bottom: 128px;}
     .grid {column-gap: 16px; row-gap: 32px;}
     .column.align-center {
@@ -270,7 +272,7 @@
 
 @media only screen and (max-width: 320px) {
     .grid {column-gap: 0;}
-    #header, #footer, .section {
+    #header, #footer, .section, .chapter .header {
         padding-left: 16px;
         padding-right: 16px;
     }
