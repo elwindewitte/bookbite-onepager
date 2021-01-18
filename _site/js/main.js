@@ -35,3 +35,26 @@ function toggleMenu() {
     localStorage.setItem('menuOpen', 'true');
   }
 }
+
+// TOGGLE LIGHT/DARK MODE
+function toggleLightDark() {
+  var toggleSection = document.getElementById('styleguide');
+  var toggleContainer = document.getElementById('toggleContainer');
+  var textLightMode = document.getElementById('textLightMode');
+  var textDarkMode = document.getElementById('textDarkMode');
+  var colorTheme = localStorage.getItem('theme');
+
+  if (!(colorTheme == 'light') && !(colorTheme == 'dark')) {
+    toggleSection.classList.add('dark');
+    toggleSection.classList.remove('light');
+    localStorage.setItem('theme', 'dark');
+  } else if (colorTheme == 'light') {
+    toggleSection.classList.add('dark');
+    toggleSection.classList.remove('light');
+    localStorage.setItem('theme', 'dark');
+  } else if (colorTheme == 'dark') {
+    toggleSection.classList.add('light');
+    toggleSection.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+  }
+}
