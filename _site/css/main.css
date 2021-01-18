@@ -1239,7 +1239,7 @@ a.button.secondary:focus {background: hsl(259, 40%, 98%)}
 #styleguide .logo-cards {
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 16px;
+    column-gap: 32px;
     row-gap: 16px;
 }
 
